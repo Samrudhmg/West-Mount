@@ -43,7 +43,7 @@ export function SuccessStories() {
     const story = successStories[currentStory];
 
     return (
-        <section className="bg-white py-24 font-inter">
+        <section className="bg-white py-24 font-inter max-w-7xl mx-auto">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="mb-6 flex flex-col items-start space-y-2 text-left md:items-center lg:mb-10">
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-4xl">
