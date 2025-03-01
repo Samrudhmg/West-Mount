@@ -43,14 +43,15 @@ export function SuccessStories() {
     const story = successStories[currentStory];
 
     return (
-        <section className="bg-white py-24 font-inter max-w-7xl mx-auto">
+        <section className=" bg-gradient-to-r from-[#002328] via-[#003B43] to-[#002328] py-24 font-inter max-w-7xl mx-auto rounded-3xl">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="mb-6 flex flex-col items-start space-y-2 text-left md:items-center lg:mb-10">
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-4xl">
-                        Testimonials
+                        Success Stories
                     </h2>
                     <p className="max-w-[800px] text-gray-500 md:text-lg">
-                        The journey of Westmount's study abroad
+                        Hear from students who made their dream of studying
+                        abroad a reality with our help.{" "}
                     </p>
                 </div>
 
