@@ -9,8 +9,6 @@ import Hero from "@/components/main/hero-section";
 import StudyAbroadLanding from "@/components/main/info-visa";
 import PartnerUniversities from "@/components/main/partner-universities";
 import { SuccessStories } from "@/components/main/success-stories";
-import { Form } from "@/components/ui/form";
-import { ApplyForm } from "../applyform";
 import ContactForm from "../contact-us";
 
 const stats = [

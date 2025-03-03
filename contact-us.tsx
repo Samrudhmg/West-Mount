@@ -5,9 +5,9 @@ import { Mail, Phone } from "lucide-react";
 
 export default function ContactForm() {
     return (
-        <div className="container mx-auto grid items-start justify-around gap-12 px-4 py-12 md:grid-cols-2 md:gap-6 md:px-12 md:py-1 lg:grid-cols-2">
+        <div className="container max-w-7xl mx-auto grid items-start justify-around gap-12 px-4 py-12 md:grid-cols-2 md:gap-6 md:px-12 md:py-1 lg:grid-cols-2">
             {/* Left Column */}
-            <div className="space-y-6 md:my-auto md:p-2 lg:p-20">
+            <div className="space-y-6 md:my-auto md:p-2 lg:p-18">
                 <div className="space-y-2">
                     <h2 className="text-4xl font-bold text-black">
                         Contact <span className="text-teal-600">Us</span>

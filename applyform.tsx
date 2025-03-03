@@ -185,7 +185,7 @@ export function ApplyForm() {
     return (
         <div className="w-full bg-white rounded-lg border p-2 shadow-sm">
             <div className="block px-5 py-4 md:px-2">
-                <h3 className="mb-6 text-center text-2xl font-semibold">
+                <h3 className="mb-6 text-black text-center text-2xl font-semibold">
                     Get in touch
                 </h3>
                 <form onSubmit={handleSubmit} className="mb-5 space-y-4">
