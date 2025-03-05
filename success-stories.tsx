@@ -43,13 +43,13 @@ export function SuccessStories() {
     const story = successStories[currentStory];
 
     return (
-        <section className=" bg-gradient-to-r from-[#002328] via-[#003B43] to-[#002328] py-24 font-inter max-w-7xl mx-auto rounded-3xl">
+        <section className=" bg-gradient-to-r from-[#002328] via-[#003B43] to-[#002328] py-8 md:py-24 font-inter max-w-7xl mx-auto  md:rounded-3xl">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="mb-6 flex flex-col items-start space-y-2 text-left md:items-center lg:mb-10">
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-4xl">
+                    <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-4xl">
                         Success Stories
                     </h2>
-                    <p className="max-w-[800px] text-gray-500 md:text-lg">
+                    <p className="max-w-[800px] text-gray-400 md:text-lg">
                         Hear from students who made their dream of studying
                         abroad a reality with our help.{" "}
                     </p>
@@ -96,7 +96,7 @@ export function SuccessStories() {
             </div>
 
             <section>
-                <div className="mt-24 flex justify-center gap-4 md:mt-10">
+                <div className="mt-24 flex justify-center gap-2  md:gap-4 md:mt-10 px-4">
                     {/* <ApplyDialogForm> */}
                     <Button
                         variant="outline"
@@ -107,7 +107,7 @@ export function SuccessStories() {
                     {/* </ApplyDialogForm>
                     <ApplyDialogForm> */}
                     <Button
-                        className="flex h-12 items-center bg-black"
+                        className="flex h-12 items-center bg-white"
                         variant="nothing"
                     >
                         Download Brochure

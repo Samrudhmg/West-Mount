@@ -6,7 +6,7 @@ export default function OurStorySection() {
             <h1 className="text-center text-3xl md:text-4xl font-bold mb-5 md:mb-12">
                 Our <span className="text-teal-600">Story</span>
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2   mb-6 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 mb-6 items-center">
                 {/* First Component */}
                 <div>
                     <Image
@@ -17,9 +17,9 @@ export default function OurStorySection() {
                         className="rounded-lg w-full h-auto object-fill aspect-[4/3]"
                     />
                 </div>
-                <div className="w-full max-w-[90%]  md:max-w-[80%] text-justify mx-auto ">
+                <div className="w-full max-w-[90%] md:max-w-[80%] text-justify mx-auto">
                     <p className="text-gray-700 leading-relaxed mt-5 md:mt-0">
-                        <span className="text-teal-500 font-bold ">
+                        <span className="text-teal-500 font-bold">
                             West Mount Study Abroad
                         </span>{" "}
                         began with a mission to bridge the gap between aspiring
@@ -38,17 +38,16 @@ export default function OurStorySection() {
                 </div>
             </div>
 
-            <div className=" flex flex-col-reverse grid-cols-1 md:grid-cols-2  mb-3  md:mb-16 items-center">
-                {/* Text First in Second Component */}
-                <div className="space-y-4 text-justify max-w-[90%]  md:max-w-[80%] mt-4 md:mt-0  mx-auto">
-                    {" "}
-                    {/* Prevent shrinking */}
-                    <p className="text-gray-700 leading-relaxed">
+            {/* Second Component - Image Right, Image First on Mobile */}
+            <div className="grid grid-cols-1 md:grid-cols-2 mb-6 items-center">
+                {/* Text First on Desktop, Image First on Mobile */}
+                <div className="w-full max-w-[90%] md:max-w-[80%] text-justify mx-auto">
+                    <p className="text-gray-700 leading-relaxed mt-5 md:mt-0">
                         Our initial focus was on commerce and related fields,
                         offering tailored guidance for students aiming to pursue
                         careers in business, finance, and management.
                     </p>
-                    <p className="text-gray-700 leading-relaxed">
+                    <p className="text-gray-700 leading-relaxed mt-4">
                         Through our journey, we discovered a significant gap in
                         Kerala when it came to expert career guidance,
                         counseling tailored to students' degrees, and
@@ -59,8 +58,8 @@ export default function OurStorySection() {
                         and more.
                     </p>
                 </div>
-                {/* Image Last in Second Component */}
-                <div className=" w-full">
+                {/* Image First on Mobile, Right on Desktop */}
+                <div className="order-first md:order-none">
                     <Image
                         src="/images/success-img2.svg"
                         alt="Airplane flying through clouds"

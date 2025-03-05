@@ -26,7 +26,7 @@ export default function Navbar() {
 
     return (
         <header className="sticky top-0 z-50 w-full border-b bg-white text-black">
-            <div className="container mx-auto flex h-16 items-center justify-between px-4 md:justify-around ">
+            <div className="container mx-auto flex h-16 items-center justify-between px-4 md:justify-around">
                 {/* Logo */}
                 <button
                     onClick={() => handleScroll("hero")}
@@ -40,7 +40,7 @@ export default function Navbar() {
                 </button>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden md:flex items-center space-x-6 p-4 bg-white shadow-md">
+                <nav className="hidden md:flex items-center space-x-6 p-4 bg-white">
                     {navLinks.map((link) => (
                         <Link
                             key={link.href}
@@ -53,6 +53,7 @@ export default function Navbar() {
                         </Link>
                     ))}
                 </nav>
+
                 {/* Get Started Button (Desktop) */}
                 <div className="hidden md:block">
                     <button className="rounded-md bg-[#006D77] px-4 py-2 text-white hover:bg-[#006D77]/90">
@@ -72,11 +73,12 @@ export default function Navbar() {
                 {/* Mobile Navigation */}
                 {isOpen && (
                     <div className="animate-slide-in absolute inset-x-0 top-16 border-b bg-white md:hidden">
-                        <nav className="grid grid-col space-y-5 justify-center  md:flex items-center space-x-6 p-4 bg-white shadow-md">
+                        <nav className="grid grid-col space-y-5 text-center justify-center p-4 bg-white shadow-md">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.href}
                                     href={link.href}
+                                    onClick={() => setIsOpen(false)} // Close menu when clicked
                                     className={`text-gray-700 hover:text-gray-900 focus:text-blue-600 ${
                                         pathname === link.href
                                             ? "text-blue-600"

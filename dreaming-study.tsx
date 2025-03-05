@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function StudyAbroadPage() {
     return (
-        <div className="mx-auto max-w-7xl px-4 py-12 text-left  md:text-center">
+        <div className="mx-auto max-w-7xl px-4  text-left  md:text-center">
             <div className="mb-8 md:hidden">
                 <h1 className="mb-4 text-3xl font-semibold md:text-4xl">
                     Dreaming of studying{" "}
@@ -23,7 +23,7 @@ export default function StudyAbroadPage() {
                     alt="World map dotted pattern"
                     width={800}
                     height={400}
-                    className="h-52 w-full object-cover  lg:h-auto"
+                    className="h-52 md:h-64  w-full object-cover  lg:h-auto"
                     priority
                 />
             </div>

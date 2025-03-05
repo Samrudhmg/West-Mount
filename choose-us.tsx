@@ -35,7 +35,7 @@ const features = [
 
 export default function WhyChooseUs() {
     return (
-        <section className="bg-[#0a2a2f] text-white w-full mx-auto py-16 px-4">
+        <section className="bg-[#0a2a2f] text-white w-full mx-auto py-7 md:py-16 px-4">
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-bold md:text-center text-left mb-4">
                     Why Choose Us?

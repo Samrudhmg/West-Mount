@@ -183,7 +183,7 @@ export function ApplyForm() {
     };
 
     return (
-        <div className="w-full bg-white rounded-lg border p-2 shadow-sm">
+        <div className="w-full bg-white rounded-lg lg:p-2 shadow-[0px_1px_7px_1px_#00000017]">
             <div className="block px-5 py-4 md:px-2">
                 <h3 className="mb-6 text-black text-center text-2xl font-semibold">
                     Get in touch
@@ -224,7 +224,7 @@ export function ApplyForm() {
                                 value={selectedDialCode}
                                 onValueChange={setSelectedDialCode}
                             >
-                                <SelectTrigger className="h-12 w-[115px] rounded-lg border border-gray-300 bg-white shadow-sm focus:ring-2 focus:ring-teal-500">
+                                <SelectTrigger className="h-12 w-[95px] rounded-lg border border-gray-300 bg-white shadow-sm focus:ring-2 focus:ring-teal-500 cursor-pointer">
                                     <SelectValue>
                                         <div className="flex items-center gap-2">
                                             <Image
@@ -253,7 +253,7 @@ export function ApplyForm() {
                                         </div>
                                     </SelectValue>
                                 </SelectTrigger>
-                                <SelectContent className="bg-white text-black border border-gray-300 shadow-md">
+                                <SelectContent className="bg-white text-black border border-gray-300 shadow-md cursor-pointer">
                                     {COUNTRY_OPTIONS.map((country) => (
                                         <SelectItem
                                             key={country.code}
@@ -449,7 +449,7 @@ export function ApplyBottomForm() {
                         placeholder="Enter your Name"
                         required
                         name="name"
-                        className="h-10 w-[150px] rounded-md bg-white"
+                        className="h-10 w-[150px] rounded-md text-black"
                         value={name}
                         onChange={(event) => setName(event.target.value)}
                     />

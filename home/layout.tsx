@@ -19,7 +19,7 @@ const stats = [
 
 export default function Layout() {
     return (
-        <div className="bg-gradient-to-r from-[#F8FFFF] to-[#cbe9ff]">
+        <div className="bg-gradient-to-b from-[#F8FCFF] to-[#F8FFFF] space-y-10">
             <Hero />
             <Counter stats={stats} />
             <DestinationSelector />

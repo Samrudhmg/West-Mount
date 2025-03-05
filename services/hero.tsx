@@ -4,12 +4,12 @@ import StudentAvatars from "../students-community";
 export default function ServiceHero() {
     return (
         <div className="max-w-7xl mx-auto mt-16">
-            <div className="relative w-full h-80 rounded-3xl overflow-hidden">
+            <div className="relative w-full h-96 md:h-[500px] lg:h-96 rounded-xl overflow-hidden px-2">
                 <Image
                     src="/images/plane-image.jpg"
                     alt="Airplane silhouette against a sunset sky"
                     fill
-                    className="object-cover"
+                    className=" md:object-cover object-center md:object-[center_top] lg:object-cover"
                     sizes="(max-width: 768px) 100vw, 900px"
                 />
                 {/* Overlay for better text readability */}
@@ -17,8 +17,8 @@ export default function ServiceHero() {
             </div>
 
             {/* Content Section */}
-            <div className="mt-6 text-left max-w-3xl">
-                <h1 className="text-5xl font-bold mb-4 leading-14">
+            <div className="mt-6 text-left max-w-3xl px-2 md:px-0">
+                <h1 className=" text-4xl md:text-5xl font-bold mb-4  md:leading-14">
                     <span className="text-gray-900">Dreaming of </span>
                     <span className="text-teal-600">
                         Studying

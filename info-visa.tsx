@@ -4,7 +4,7 @@ export default function StudyAbroadLanding() {
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             {/* Hero Section */}
-            <section className="flex flex-col-reverse md:flex-row items-center gap-8 mb-24">
+            <section className="flex flex-col-reverse md:flex-row items-center gap-8 mb-12 md:mb-24">
                 <div className="w-full md:w-1/2 space-y-4">
                     <h1 className="text-3xl text-left md:text-right md:text-4xl lg:text-4xl font-bold text-black leading-tight">
                         Join the{" "}
