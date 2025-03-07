@@ -57,7 +57,7 @@ export function SuccessStories() {
 
                 <div className="relative mx-auto flex max-w-4xl flex-col gap-2">
                     <div className="flex flex-col items-center gap-8  md:h-[60vh] md:flex-row md:justify-center  md:gap-6">
-                        <div className="relative aspect-square w-full overflow-hidden md:h-[90%] md:w-[37%]">
+                        <div className="relative aspect-square w-full overflow-hidden md:h-[90%] xl:h-[80%] md:w-[37%]">
                             <Image
                                 width={350}
                                 height={350}
@@ -67,7 +67,7 @@ export function SuccessStories() {
                                 className="size-full rounded-[2rem] object-cover transition-opacity duration-300 ease-in-out lg:rounded-[2.5rem]"
                             />
                         </div>
-                        <div className="relative flex  flex-col justify-between rounded-3xl bg-[#006969] p-8 text-white md:h-[100%] md:w-[45%] md:justify-around md:rounded-[3rem] md:p-6 lg:p-8">
+                        <div className="relative flex  flex-col justify-between rounded-3xl bg-[#006969] p-8 text-white md:h-[100%] xl:h-[90%] md:w-[45%] md:justify-around md:rounded-[3rem] md:p-6 lg:p-8">
                             <blockquote className="mb-6 text-lg md:text-[16px] lg:text-lg">
                                 &quot;
                                 {story.testimonial}

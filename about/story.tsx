@@ -14,7 +14,7 @@ export default function OurStorySection() {
                         alt="Airplane flying through clouds"
                         width={500}
                         height={350}
-                        className="rounded-lg w-full h-auto object-fill aspect-[4/3]"
+                        className="rounded-lg w-full h-auto object-cover md:object-fill aspect-[4/3]"
                     />
                 </div>
                 <div className="w-full max-w-[90%] md:max-w-[80%] text-justify mx-auto">
@@ -65,7 +65,7 @@ export default function OurStorySection() {
                         alt="Airplane flying through clouds"
                         width={500}
                         height={350}
-                        className="rounded-lg w-full h-auto object-fill aspect-[4/3]"
+                        className="rounded-lg w-full h-auto object-cover md:object-fill aspect-[4/3]"
                     />
                 </div>
             </div>

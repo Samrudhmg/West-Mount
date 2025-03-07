@@ -2,64 +2,74 @@ import Image from "next/image";
 
 export default function StudyAbroadLanding() {
     return (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            {/* Hero Section */}
-            <section className="flex flex-col-reverse md:flex-row items-center gap-8 mb-12 md:mb-24">
-                <div className="w-full md:w-1/2 space-y-4">
-                    <h1 className="text-3xl text-left md:text-right md:text-4xl lg:text-4xl font-bold text-black leading-tight">
+        <div className="max-w-7xl mx-auto px-4 py-12 space-y-16 md:space-y-24">
+            {/* First section - reverse order on desktop */}
+            {/* Text content */}
+            <div className="flex flex-col md:flex-row-reverse items-center gap-10  md:gap-28">
+                {/* Image container - appears first on mobile */}
+                <div className="w-full md:w-1/2 flex justify-start">
+                    <div className="max-w-lg relative">
+                        <Image
+                            src="/images/Success-Image.jpg"
+                            alt="nothing"
+                            width={400}
+                            height={440}
+                            className="w-full h-auto rounded-lg"
+                        />
+                    </div>
+                </div>
+
+                {/* Text content - Starts from left, but is aligned to the right side of the container */}
+                <div className="w-full md:w-1/2 space-y-4 flex flex-col justify-center items-start text-start md:pl-18">
+                    <h2 className="text-3xl md:text-4xl font-bold">
                         Join the{" "}
-                        <span className="text-teal-600">
-                            Westmount Study Abroad
+                        <span className="text-[#006969]">
+                            Westmount Study
+                            <br />
+                            Abroad
                         </span>{" "}
-                        program with a{" "}
-                        <span className="text-teal-600">99%</span>
-                        <br /> visa success rate!
-                    </h1>
-                    <p className="text-gray-600 text-lg text-left md:text-right">
+                        program with a 99% <br />
+                        visa success rate!
+                    </h2>
+                    <p className="text-gray-600">
                         Secure your dream course with confidence and clarity.
                     </p>
                 </div>
-                <div className="w-full md:w-1/2 flex justify-center">
-                    <div className="rounded-lg overflow-hidden shadow-lg max-w-[400px]">
-                        <Image
-                            src="/images/Success-Image.jpg"
-                            alt="Student with books"
-                            width={400}
-                            height={300}
-                            className="w-full h-auto object-cover"
-                        />
-                    </div>
-                </div>
-            </section>
+            </div>
 
-            {/* Second Section - Image First on md/lg, Text First on Mobile */}
-            <section className="flex flex-col-reverse md:flex-row items-center gap-8">
-                {/* Image first on md/lg, second on mobile */}
-                <div className="w-full md:w-1/2 flex justify-center order-2 md:order-1">
-                    <div className="rounded-lg overflow-hidden shadow-lg max-w-[400px]">
+            {/* Second section - normal order */}
+            <div className="flex flex-col md:flex-row items-center gap-10  md:gap-28">
+                {/* Image container - appears first on mobile */}
+                <div className="w-full md:w-1/2 flex justify-end">
+                    <div className="max-w-lg">
+                        {" "}
+                        {/* Increased max width slightly */}
                         <Image
                             src="/images/Opportunities-Image.jpg"
-                            alt="Students looking at a view"
-                            width={400}
-                            height={300}
-                            className="w-full h-auto object-cover"
+                            alt="Group of students looking at a view"
+                            width={400} // Slightly increased width
+                            height={400} // Slightly increased height
+                            className="w-full h-auto rounded-lg"
                         />
                     </div>
                 </div>
-                {/* Text second on md/lg, first on mobile */}
-                <div className="w-full md:w-1/2 space-y-4 order-1 md:order-2">
-                    <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-black leading-tight">
-                        Expand your horizons with{" "}
-                        <span className="text-teal-600">
+
+                {/* Text content */}
+                <div className="w-full md:w-1/2 space-y-4 flex flex-col justify-center items-start">
+                    <h2 className="text-3xl md:text-4xl  font-bold ">
+                        Expand your horizons with
+                        <br />{" "}
+                        <span className="text-[#006969]">
                             Westmount Study Abroad
                         </span>
-                        , unlocking new global opportunities.
+                        ,<br /> unlocking new global
+                        <br /> opportunities.
                     </h2>
-                    <p className="text-gray-600 text-lg">
+                    <p className="text-gray-600">
                         Make your international aspirations a reality.
                     </p>
                 </div>
-            </section>
+            </div>
         </div>
     );
 }

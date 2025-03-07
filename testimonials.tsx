@@ -3,7 +3,7 @@ import { Plane } from "lucide-react";
 
 export default function SuccessStoriesSection() {
     return (
-        <div className="w-full py-12 px-4 sm:px-6 lg:px-8">
+        <div className="w-full py-6 md:py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
                 <div className="flex flex-col lg:flex-row">
                     {/* Image section - Shows first on mobile and tablet */}
@@ -14,15 +14,15 @@ export default function SuccessStoriesSection() {
                                 alt="Students walking on campus"
                                 width={450}
                                 height={400}
-                                className="w-[100%] h-[100%] object-cover px-2 md:px-4 py-4" // Changed to px-2 on mobile
+                                className="w-[100%] h-[100%] object-cover  md:px-4 py-4" // Changed to px-2 on mobile
                             />
 
                             {/* Google Rating Badge - Centered */}
-                            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 flex justify-center w-full">
+                            <div className="absolute bottom-3 md:bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 flex justify-center w-full">
                                 <Image
                                     src="/images/success-rate.svg"
-                                    width={280} // Slightly reduced width
-                                    height={280} // Slightly reduced height
+                                    width={240} // Slightly reduced width
+                                    height={240} // Slightly reduced height
                                     alt="Google Ratings"
                                     className="mx-auto" // Added mx-auto to center the image
                                 />

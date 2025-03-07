@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 const students = [
-    { src: "/icons/profile-img1.png", alt: "Student 1" },
+    { src: "/icons/profile-img22.png", alt: "Student 1" },
     { src: "/icons/profile-img.png", alt: "Student 2" },
     { src: "/icons/profile-img2.png", alt: "Student 3" },
 ];

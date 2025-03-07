@@ -46,7 +46,7 @@ export default function FoundersSection() {
             </div>
 
             {/* Started On Section */}
-            <div className="flex flex-col items-start md:items-end  md:justify-end mt-8">
+            <div className="flex flex-col items-center md:items-end  md:justify-end mt-8">
                 <div className="flex items-center text-teal-600 gap-2">
                     <Image
                         src="/icons/founder.png"

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const features = [
     {
@@ -60,12 +61,22 @@ export default function WhyChooseUs() {
                 </div>
 
                 <div className="flex justify-center mt-12">
-                    <Button
-                        className="bg-white text-[#0a2a2f] hover:bg-gray-100 px-6 py-6 text-lg rounded-md font-medium flex items-center gap-2"
-                        variant="nothing"
-                    >
+                    <Button className="bg-white text-[#006969] hover:bg-[#005B5B] hover:text-white px-6 py-6 text-lg rounded-md font-medium flex items-center gap-2 group">
                         Get Started
-                        <img src="/icons/plane.svg" alt="placeholder.svg"></img>
+                        <Image
+                            src="/icons/plane.svg"
+                            alt="plane icon"
+                            width={20}
+                            height={20}
+                            className="group-hover:hidden w-6 h-6"
+                        />
+                        <Image
+                            src="/icons/white-plane.svg"
+                            alt="hovered plane icon"
+                            width={20}
+                            height={20}
+                            className="hidden group-hover:block w-6 h-6"
+                        />
                     </Button>
                 </div>
             </div>

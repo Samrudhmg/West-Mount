@@ -96,7 +96,7 @@ export default function DestinationSelector() {
             <div className="md:text-center mb-10">
                 <h1 className="text-4xl font-bold mb-1 text-black">
                     Choose your Favourite{" "}
-                    <span className="text-teal-600">
+                    <span className=" text-teal-700">
                         <br /> Destination
                     </span>
                 </h1>
@@ -110,9 +110,9 @@ export default function DestinationSelector() {
                 {displayedCountries.map((country) => (
                     <div
                         key={country.id}
-                        className="bg-white rounded-lg overflow-hidden shadow-lg max-w-[320px] mx-auto flex flex-col items-center"
+                        className="bg-white rounded-lg overflow-hidden shadow-lg  max-w-[350px] mx-auto flex flex-col items-center"
                     >
-                        <div className="relative h-44 w-full">
+                        <div className="relative h-52 w-full">
                             <Image
                                 src={country.image || "/placeholder.svg"}
                                 alt="img"
@@ -120,7 +120,7 @@ export default function DestinationSelector() {
                                 className="object-cover"
                             />
                             <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2">
-                                <div className="w-12 h-12 rounded-full border-4 border-white overflow-hidden bg-white flex items-center justify-center">
+                                <div className="w-14 h-14 rounded-full   overflow-hidden bg-white flex items-center justify-center">
                                     <Image
                                         src={country.flag || "/placeholder.svg"}
                                         alt="img"
@@ -131,14 +131,17 @@ export default function DestinationSelector() {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col items-center pt-6 pb-4 px-4 h-[230px] gap-2 mt-4">
-                            <h3 className="text-lg font-semibold text-teal-600 mb-1">
+                        <div className="flex flex-col items-center justify-around pt-6 pb-4 px-4 h-[200px] gap-2 mt-4">
+                            <h3 className="text-lg font-semibold text-teal-600">
                                 {country.name}
                             </h3>
-                            <p className="text-gray-600 text-[13px] text-center mb-2">
+                            <p className="text-gray-600 text-[13px] text-center">
                                 {country.description}
                             </p>
-                            <Button className="bg-teal-600 text-white px-4 py-3 rounded-md text-xs hover:bg-teal-700 transition-colors">
+                            <Button
+                                variant="default"
+                                className=" text-white px-4 py-3 rounded-md text-xs hover:bg-teal-700 transition-colors"
+                            >
                                 Learn more
                             </Button>
                         </div>
@@ -149,9 +152,9 @@ export default function DestinationSelector() {
             <div className="flex justify-center mt-10">
                 <Button
                     onClick={handleNext}
-                    className="w-14 h-14 rounded-full bg-teal-200 flex items-center justify-center hover:bg-teal-300 transition-colors"
+                    className="w-14 h-14 rounded-full cursor-pointer bg-teal-100 flex items-center justify-center hover:bg-teal-200 transition-colors"
                 >
-                    <ChevronRight className="text-teal-600 w-5 h-5" />
+                    <ChevronRight className="text-teal-700 w-6 h-6" />
                 </Button>
             </div>
         </div>

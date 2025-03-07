@@ -24,8 +24,10 @@ export default function Hero() {
                         </h1>
                         <p className="text-sm sm:text-base md:text-xl text-gray-600 mt-3 md:mt-4">
                             At West Mount Study Abroad, we turn your dream of
-                            studying abroad into a seamless, successful
-                            reality-changing journey.
+                            <br />
+                            studying abroad into a seamless, successful reality
+                            <br />
+                            changing journey.
                         </p>
                     </div>
 
@@ -34,13 +36,22 @@ export default function Hero() {
                             <StudentAvatars />
                         </div>
                     </div>
-
                     <div className="flex flex-wrap gap-4">
-                        <Button variant="outline" className="rounded-md">
+                        <Button
+                            variant="outline"
+                            className="rounded-md py-5 text-[#006969]"
+                        >
                             Learn more
                         </Button>
-                        <Button className="rounded-md bg-teal-600 hover:bg-teal-700">
-                            Get Started <ArrowRight className="ml-2 h-4 w-4" />
+                        <Button variant="default" className="rounded-md py-5 ">
+                            Get Started{" "}
+                            <Image
+                                src="icons/white-plane.svg"
+                                alt="plane"
+                                height={200}
+                                width={100}
+                                className="w-5 h-5"
+                            />
                         </Button>
                     </div>
 

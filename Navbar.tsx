@@ -3,6 +3,8 @@ import { Menu } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Button } from "../ui/button";
+import Image from "next/image";
 
 const navLinks = [
     { name: "Home", href: "/" },
@@ -25,7 +27,7 @@ export default function Navbar() {
     };
 
     return (
-        <header className="sticky top-0 z-50 w-full border-b bg-white text-black">
+        <header className="sticky top-0 z-50 w-full  bg-white text-black">
             <div className="container mx-auto flex h-16 items-center justify-between px-4 md:justify-around">
                 {/* Logo */}
                 <button
@@ -56,9 +58,9 @@ export default function Navbar() {
 
                 {/* Get Started Button (Desktop) */}
                 <div className="hidden md:block">
-                    <button className="rounded-md bg-[#006D77] px-4 py-2 text-white hover:bg-[#006D77]/90">
+                    <Button variant="default" className="rounded-md py-5">
                         Get Started
-                    </button>
+                    </Button>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -72,7 +74,7 @@ export default function Navbar() {
 
                 {/* Mobile Navigation */}
                 {isOpen && (
-                    <div className="animate-slide-in absolute inset-x-0 top-16 border-b bg-white md:hidden">
+                    <div className=" animate-slide-in absolute inset-x-0 top-16 border-b bg-white md:hidden">
                         <nav className="grid grid-col space-y-5 text-center justify-center p-4 bg-white shadow-md">
                             {navLinks.map((link) => (
                                 <Link
