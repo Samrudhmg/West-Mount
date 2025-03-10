@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ApplyDialogForm } from "./apply-dialog-form";
 
 export default function DestinationSelector() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -138,12 +139,14 @@ export default function DestinationSelector() {
                             <p className="text-gray-600 text-[13px] text-center">
                                 {country.description}
                             </p>
-                            <Button
-                                variant="default"
-                                className=" text-white px-4 py-3 rounded-md text-xs hover:bg-teal-700 transition-colors"
-                            >
-                                Learn more
-                            </Button>
+                            <ApplyDialogForm>
+                                <Button
+                                    variant="default"
+                                    className=" text-white px-4 py-3 rounded-md text-xs hover:bg-teal-700 transition-colors"
+                                >
+                                    Learn more
+                                </Button>
+                            </ApplyDialogForm>
                         </div>
                     </div>
                 ))}
