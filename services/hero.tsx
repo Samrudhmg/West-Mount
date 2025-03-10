@@ -1,9 +1,11 @@
 import Image from "next/image";
 import StudentAvatars from "../students-community";
+import { Button } from "@/components/ui/button";
+import { ApplyDialogForm } from "../apply-dialog-form";
 
 export default function ServiceHero() {
     return (
-        <div className="max-w-7xl mx-auto mt-16">
+        <div className="max-w-7xl mx-auto py-16 ">
             <div className="relative w-full h-96 md:h-[500px] lg:h-96 rounded-xl overflow-hidden px-2">
                 <Image
                     src="/images/plane-image.jpg"
@@ -43,26 +45,24 @@ export default function ServiceHero() {
                 </div>
 
                 <div className="flex flex-wrap gap-4">
-                    <button className="px-6 py-2 border border-gray-300 rounded-md bg-white text-gray-700 hover:bg-gray-50">
+                    <Button
+                        variant="outline"
+                        className="rounded-md py-5 text-[#006969]"
+                    >
                         Learn more
-                    </button>
-                    <button className="px-6 py-2 rounded-md bg-teal-600 text-white hover:bg-teal-700 flex items-center">
-                        Start Your Journey Today
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-4 w-4 ml-2"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                    </Button>
+                    <ApplyDialogForm>
+                        <Button variant="default" className="rounded-md py-5 ">
+                            Get Started{" "}
+                            <Image
+                                src="icons/white-plane.svg"
+                                alt="plane"
+                                height={200}
+                                width={100}
+                                className="w-5 h-5"
                             />
-                        </svg>
-                    </button>
+                        </Button>
+                    </ApplyDialogForm>
                 </div>
             </div>
         </div>

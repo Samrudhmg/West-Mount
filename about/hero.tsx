@@ -1,10 +1,13 @@
 import Image from "next/image";
 import { Plane } from "lucide-react";
 import StudentAvatars from "../students-community";
+import { Button } from "@/components/ui/button";
+import { ApplyDialogForm } from "../apply-dialog-form";
+import UpCommingEvents from "../up-events";
 
 export default function WestmountAbout() {
     return (
-        <div className="container mx-auto px-4 pb-12  md:py-16 max-w-6xl">
+        <div className="container  mx-auto px-4 pb-12  md:py-22 max-w-6xl">
             <div className="flex flex-col-reverse md:flex-row items-start gap-8 md:gap-12">
                 {/* Left Content */}
                 <div className="w-full md:w-1/2 space-y-6  md:mt-3">
@@ -21,12 +24,27 @@ export default function WestmountAbout() {
                     <StudentAvatars />
 
                     <div className="flex flex-wrap gap-4 mt-6">
-                        <button className="px-6 py-2.5 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors">
+                        <Button
+                            variant="outline"
+                            className="rounded-md py-5 text-[#006969]"
+                        >
                             Learn more
-                        </button>
-                        <button className="px-6 py-2.5 bg-teal-700 text-white rounded-md flex items-center gap-2 hover:bg-teal-800 transition-colors">
-                            Get Started <Plane className="w-4 h-4 ml-1" />
-                        </button>
+                        </Button>
+                        <ApplyDialogForm>
+                            <Button
+                                variant="default"
+                                className="rounded-md py-5 "
+                            >
+                                Get Started{" "}
+                                <Image
+                                    src="icons/white-plane.svg"
+                                    alt="plane"
+                                    height={200}
+                                    width={100}
+                                    className="w-5 h-5"
+                                />
+                            </Button>
+                        </ApplyDialogForm>
                     </div>
 
                     <div className="flex items-center gap-2 mt-6">
@@ -62,97 +80,8 @@ export default function WestmountAbout() {
                 </div>
 
                 {/* Right Image */}
-                <div className="w-full md:w-1/2 mt-8 md:mt-0">
+                <div className="relative w-full md:w-1/2 mt-8 md:mt-0">
                     <div className="relative w-full aspect-[4/3] overflow-hidden">
-                        {/* Clouds */}
-                        <div className="absolute top-8 right-8 z-10">
-                            <svg
-                                width="60"
-                                height="30"
-                                viewBox="0 0 60 30"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z"
-                                    fill="white"
-                                />
-                                <path
-                                    d="M35 25C43.2843 25 50 18.2843 50 10C50 1.71573 43.2843 -5 35 -5C26.7157 -5 20 1.71573 20 10C20 18.2843 26.7157 25 35 25Z"
-                                    fill="white"
-                                />
-                                <path
-                                    d="M60 20C65.5228 20 70 15.5228 70 10C70 4.47715 65.5228 0 60 0C54.4772 0 50 4.47715 50 10C50 15.5228 54.4772 20 60 20Z"
-                                    fill="white"
-                                />
-                            </svg>
-                        </div>
-
-                        <div className="absolute bottom-12 left-8 z-10">
-                            <svg
-                                width="60"
-                                height="30"
-                                viewBox="0 0 60 30"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z"
-                                    fill="white"
-                                />
-                                <path
-                                    d="M35 25C43.2843 25 50 18.2843 50 10C50 1.71573 43.2843 -5 35 -5C26.7157 -5 20 1.71573 20 10C20 18.2843 26.7157 25 35 25Z"
-                                    fill="white"
-                                />
-                                <path
-                                    d="M60 20C65.5228 20 70 15.5228 70 10C70 4.47715 65.5228 0 60 0C54.4772 0 50 4.47715 50 10C50 15.5228 54.4772 20 60 20Z"
-                                    fill="white"
-                                />
-                            </svg>
-                        </div>
-
-                        <div className="absolute top-1/4 right-1/4 z-10">
-                            <svg
-                                width="60"
-                                height="30"
-                                viewBox="0 0 60 30"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z"
-                                    fill="white"
-                                />
-                                <path
-                                    d="M35 25C43.2843 25 50 18.2843 50 10C50 1.71573 43.2843 -5 35 -5C26.7157 -5 20 1.71573 20 10C20 18.2843 26.7157 25 35 25Z"
-                                    fill="white"
-                                />
-                                <path
-                                    d="M60 20C65.5228 20 70 15.5228 70 10C70 4.47715 65.5228 0 60 0C54.4772 0 50 4.47715 50 10C50 15.5228 54.4772 20 60 20Z"
-                                    fill="white"
-                                />
-                            </svg>
-                        </div>
-
-                        {/* Paper Airplane */}
-                        <div className="absolute bottom-12 right-12 z-10">
-                            <svg
-                                width="60"
-                                height="60"
-                                viewBox="0 0 60 60"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M5 5L55 30L5 55V5Z"
-                                    stroke="white"
-                                    strokeWidth="2"
-                                    fill="white"
-                                />
-                            </svg>
-                        </div>
-
-                        {/* Graduate Image */}
                         <Image
                             src="/images/serv-image.png"
                             alt="Graduate student in cap and gown"
@@ -164,6 +93,7 @@ export default function WestmountAbout() {
                     </div>
                 </div>
             </div>
+            <UpCommingEvents />
         </div>
     );
 }

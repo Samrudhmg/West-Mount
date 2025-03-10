@@ -43,7 +43,7 @@ export function SuccessStories() {
     const story = successStories[currentStory];
 
     return (
-        <section className=" bg-gradient-to-r from-[#002328] via-[#003B43] to-[#002328] py-8 md:py-24 font-inter max-w-7xl mx-auto  md:rounded-3xl">
+        <section className=" bg-gradient-to-r from-[#002328] via-[#003B43] to-[#002328] py-20 md:py-24 font-inter max-w-7xl mx-auto  md:rounded-3xl">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="mb-6 flex flex-col items-start space-y-2 text-left md:items-center lg:mb-10">
                     <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-4xl">
@@ -56,8 +56,8 @@ export function SuccessStories() {
                 </div>
 
                 <div className="relative mx-auto flex max-w-4xl flex-col gap-2">
-                    <div className="flex flex-col items-center gap-8  md:h-[60vh] md:flex-row md:justify-center  md:gap-6">
-                        <div className="relative aspect-square w-full overflow-hidden md:h-[90%] xl:h-[80%] md:w-[37%]">
+                    <div className="flex flex-col items-center gap-8  md:h-[70vh]  md:flex-row md:justify-center  md:gap-6">
+                        <div className="relative aspect-square w-full overflow-hidden md:h-[90%]  xl:h-[80%] md:w-[40%]">
                             <Image
                                 width={350}
                                 height={350}
@@ -67,15 +67,15 @@ export function SuccessStories() {
                                 className="size-full rounded-[2rem] object-cover transition-opacity duration-300 ease-in-out lg:rounded-[2.5rem]"
                             />
                         </div>
-                        <div className="relative flex  flex-col justify-between rounded-3xl bg-[#006969] p-8 text-white md:h-[100%] xl:h-[90%] md:w-[45%] md:justify-around md:rounded-[3rem] md:p-6 lg:p-8">
-                            <blockquote className="mb-6 text-lg md:text-[16px] lg:text-lg">
+                        <div className="relative flex  flex-col justify-between rounded-3xl bg-[#006969] p-4  text-white  md:h-[100%] xl:h-[90%] md:w-[50%] lg:w-[45%] md:justify-around md:rounded-[3rem] md:p-6 lg:p-8">
+                            <blockquote className="mb-6 text-sm md:text-[16px] lg:text-lg">
                                 &quot;
                                 {story.testimonial}
                                 &quot;
                             </blockquote>
                             <footer>
                                 <cite className="not-italic">
-                                    <div className="text-2xl font-bold">
+                                    <div className="text-xl md:text-2xl font-bold">
                                         {story.name}
                                     </div>
                                     {/* <div className="text-sm mt-2">
@@ -87,39 +87,13 @@ export function SuccessStories() {
                     </div>
                     <Button
                         onClick={handleNext}
-                        className="absolute cursor-pointer -bottom-24 left-1/2 size-14 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#006969]/20 p-0 hover:bg-[#006969]/30 md:-right-1 md:bottom-auto md:left-auto md:top-1/2 md:translate-x-0"
+                        className="absolute cursor-pointer -bottom-24 left-1/2 size-14 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#006969]/20 p-0 hover:bg-[#006969]/30 md:-right-4 md:bottom-auto md:left-auto md:top-1/2 md:translate-x-0"
                         aria-label="Next success story"
                     >
                         <ChevronRight className="size-6 text-white" />
                     </Button>
                 </div>
             </div>
-
-            <section>
-                <div className="mt-24 flex justify-center gap-2  md:gap-4 md:mt-10 px-4">
-                    {/* <ApplyDialogForm> */}
-                    <Button
-                        variant="outline"
-                        className="h-12 bg-white px-5 text-teal-700 "
-                    >
-                        Contact us
-                    </Button>
-                    {/* </ApplyDialogForm>
-                    <ApplyDialogForm> */}
-                    <Button
-                        className="flex h-12 items-center bg-white"
-                        variant="nothing"
-                    >
-                        Download Brochure
-                        <img
-                            src="/icons/plane.svg"
-                            alt=""
-                            className=" size-5"
-                        />
-                    </Button>
-                    {/* </ApplyDialogForm> */}
-                </div>
-            </section>
         </section>
     );
 }

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { ApplyDialogForm } from "./apply-dialog-form";
 
 const features = [
     {
@@ -61,23 +62,25 @@ export default function WhyChooseUs() {
                 </div>
 
                 <div className="flex justify-center mt-12">
-                    <Button className="bg-white text-[#006969] hover:bg-[#005B5B] hover:text-white px-6 py-6 text-lg rounded-md font-medium flex items-center gap-2 group">
-                        Get Started
-                        <Image
-                            src="/icons/plane.svg"
-                            alt="plane icon"
-                            width={20}
-                            height={20}
-                            className="group-hover:hidden w-6 h-6"
-                        />
-                        <Image
-                            src="/icons/white-plane.svg"
-                            alt="hovered plane icon"
-                            width={20}
-                            height={20}
-                            className="hidden group-hover:block w-6 h-6"
-                        />
-                    </Button>
+                    <ApplyDialogForm>
+                        <Button className="bg-white text-[#006969] hover:bg-[#005B5B] hover:text-white px-6 py-6 text-lg rounded-md font-medium flex items-center gap-2 group">
+                            Get Started
+                            <Image
+                                src="/icons/plane.svg"
+                                alt="plane icon"
+                                width={20}
+                                height={20}
+                                className="group-hover:hidden w-6 h-6"
+                            />
+                            <Image
+                                src="/icons/white-plane.svg"
+                                alt="hovered plane icon"
+                                width={20}
+                                height={20}
+                                className="hidden group-hover:block w-6 h-6"
+                            />
+                        </Button>
+                    </ApplyDialogForm>
                 </div>
             </div>
         </section>
@@ -92,14 +95,16 @@ function FeatureCard({
     description: string;
 }) {
     return (
-        <div className="bg-[#0e3c42] p-6 rounded-2xl">
+        <div className="bg-gradient-to-b from-[#007A8D] to-[#015A66] border border-[#FFFFFF40] p-6 rounded-2xl">
             <div className="flex flex-col">
                 <div className="mb-4">
-                    <div className="bg-[#0a2a2f] w-12 h-12 rounded-full flex items-center justify-center">
-                        <img
+                    <div className=" w-12 h-12 rounded-full flex items-center justify-center">
+                        <Image
                             src="icons/benifit-icon.svg"
                             alt="placeholder.png"
-                        ></img>
+                            width={100}
+                            height={100}
+                        />
                     </div>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{title}</h3>

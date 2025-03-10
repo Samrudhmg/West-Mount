@@ -20,7 +20,7 @@ export default function StudyAbroadLanding() {
                 </div>
 
                 {/* Text content - Starts from left, but is aligned to the right side of the container */}
-                <div className="w-full md:w-1/2 space-y-4 flex flex-col justify-center items-start text-start md:pl-18">
+                <div className="w-full md:w-1/2 space-y-4 flex flex-col justify-center items-start text-start md:ml-18">
                     <h2 className="text-3xl md:text-4xl font-bold">
                         Join the{" "}
                         <span className="text-[#006969]">

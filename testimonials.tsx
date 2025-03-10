@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Plane } from "lucide-react";
+import { Button } from "../ui/button";
+import { ApplyDialogForm } from "./apply-dialog-form";
 
 export default function SuccessStoriesSection() {
     return (
@@ -48,13 +50,27 @@ export default function SuccessStoriesSection() {
                             changing journey.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <button className="px-6 py-2 border border-teal-600 text-teal-600 font-medium rounded hover:bg-teal-50 transition-colors">
+                            <Button
+                                variant="outline"
+                                className="rounded-md py-5 text-[#006969]"
+                            >
                                 Learn more
-                            </button>
-                            <button className="px-6 py-2 bg-teal-600 text-white font-medium rounded flex items-center gap-2 hover:bg-teal-700 transition-colors">
-                                Start Your Journey Today{" "}
-                                <Plane className="w-4 h-4" />
-                            </button>
+                            </Button>
+                            <ApplyDialogForm>
+                                <Button
+                                    variant="default"
+                                    className="rounded-md py-5 "
+                                >
+                                    Get Started{" "}
+                                    <Image
+                                        src="icons/white-plane.svg"
+                                        alt="plane"
+                                        height={200}
+                                        width={100}
+                                        className="w-5 h-5"
+                                    />
+                                </Button>
+                            </ApplyDialogForm>
                         </div>
                         {/* Testimonial - Shows third on mobile */}
                         <div className="mt-10 bg-white p-6 max-w-md w-full rounded-lg shadow-[0px_0px_10px_1px_rgba(0,_0,_0,_0.1)] order-3">

@@ -8,19 +8,19 @@ import Image from "next/image";
 const socialLinks = [
     {
         id: 1,
-        href: "https://www.instagram.com/your_instagram_username",
+        href: "https://www.instagram.com/west_mount_studyabroad",
         src: "/icons/instagram.svg",
         alt: "Instagram",
     },
     {
         id: 2,
-        href: "https://www.facebook.com/your_facebook_username",
+        href: "https://www.facebook.com/Westmount.Studyabroad/",
         src: "/icons/facebook.svg",
         alt: "Facebook",
     },
     {
         id: 3,
-        href: "https://www.linkedin.com/in/your_linkedin_username",
+        href: "https://www.youtube.com/@westmountstudyabroad",
         src: "/icons/youtube.svg",
         alt: "LinkedIn",
     },

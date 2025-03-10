@@ -38,7 +38,7 @@ export default function CustomCarousel() {
 
     return (
         <div className="flex flex-col items-center justify-center px-4 max-w-6xl mx-auto">
-            {/* Card Carousel */}n
+            {/* Card Carousel */}
             <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] mb-12 cursor-pointer">
                 <div className="absolute inset-0 flex items-center justify-center">
                     {images.map((image, index) => {

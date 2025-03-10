@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import StudentAvatars from "./students-community";
+import { ApplyDialogForm } from "./apply-dialog-form";
+import UpCommingEvents from "./up-events";
 
 export default function Hero() {
     return (
@@ -43,16 +44,21 @@ export default function Hero() {
                         >
                             Learn more
                         </Button>
-                        <Button variant="default" className="rounded-md py-5 ">
-                            Get Started{" "}
-                            <Image
-                                src="icons/white-plane.svg"
-                                alt="plane"
-                                height={200}
-                                width={100}
-                                className="w-5 h-5"
-                            />
-                        </Button>
+                        <ApplyDialogForm>
+                            <Button
+                                variant="default"
+                                className="rounded-md py-5 "
+                            >
+                                Get Started{" "}
+                                <Image
+                                    src="icons/white-plane.svg"
+                                    alt="plane"
+                                    height={200}
+                                    width={100}
+                                    className="w-5 h-5"
+                                />
+                            </Button>
+                        </ApplyDialogForm>
                     </div>
 
                     <div className="flex items-center gap-2 mt-6">
@@ -98,6 +104,7 @@ export default function Hero() {
                     />
                 </div>
             </div>
+            <UpCommingEvents />
         </div>
     );
 }

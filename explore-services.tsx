@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { Button } from "../ui/button";
 
 export default function ServicesSection() {
     const services = [
@@ -71,35 +71,35 @@ export default function ServicesSection() {
                         We stand by your side every step of the way.
                     </p>
                 </div>
-                <Link
-                    href="#"
-                    className="mt-4 md:mt-0 inline-flex items-center gap-2 bg-teal-700 hover:bg-teal-800 px-4 py-2 rounded-md transition-colors text-white"
+                <Button
+                    variant="default"
+                    className="  px-6 py-6 text-lg rounded-md font-medium flex items-center gap-2"
                 >
                     Get Started
-                </Link>
+                </Button>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 {services.map((service, index) => (
                     <div
                         key={index}
-                        className="bg-white p-6 pt-10 rounded-2xl border border-gray-100 hover:shadow-md transition-shadow relative mt-8 shadow-[0px_0px_17px_-10px_#009689] min-h-[220px]"
+                        className="bg-white p-6 pt-10 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300 transform hover:scale-105 relative mt-8 shadow-[0px_0px_17px_-10px_#009689] min-h-[220px]"
                     >
                         {/* Icon Image */}
                         <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
-                            <div className=" rounded-full">
+                            <div className="rounded-full">
                                 <Image
                                     src={service.icon}
                                     alt={service.title}
                                     width={300}
                                     height={300}
-                                    className=" md:w-[5rem]  md:h-[5rem] w-[5rem] h-[5rem] rounded-full border-4 object-contain"
+                                    className="md:w-[5rem] md:h-[5rem] w-[5rem] h-[5rem] rounded-full border-4 object-contain"
                                 />
                             </div>
                         </div>
 
                         {/* Text Content */}
-                        <div className="flex flex-col items-center  gap-4 md:gap-8">
+                        <div className="flex flex-col items-center gap-4 md:gap-8">
                             <h3 className="text-teal-800 text-xl font-bold text-center mt-5 md:mt-8">
                                 {service.title}
                             </h3>

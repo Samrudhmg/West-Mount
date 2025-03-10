@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
+import Image from "next/image";
 
 export default function Questions() {
     return (
@@ -18,15 +19,14 @@ export default function Questions() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <Button
-                        className="bg-green-600 text-white py-6 rounded-xl flex items-center gap-2"
-                        variant="nothing"
-                    >
+                    <Button className="bg-green-600 hover:bg-green-700 text-white py-6 rounded-xl flex items-center gap-2">
                         Whatsapp Now
-                        <img
+                        <Image
                             src="/icons/whatsapp.svg"
                             alt="WhatsApp"
                             className="size-6"
+                            width={100}
+                            height={100}
                         />
                     </Button>
                 </Link>
@@ -34,14 +34,16 @@ export default function Questions() {
                 {/* Call Us Link (Using <a> instead of <Link>) */}
                 <a href="tel:+919072123477">
                     <Button
-                        className="bg-teal-600 text-white py-6 flex rounded-xl items-center gap-2"
-                        variant="nothing"
+                        variant="default"
+                        className=" text-white py-6 flex rounded-xl items-center gap-2"
                     >
                         Call Us
-                        <img
+                        <Image
                             src="/icons/call-fill.svg"
                             alt="Call"
                             className="size-6"
+                            width={100}
+                            height={100}
                         />
                     </Button>
                 </a>

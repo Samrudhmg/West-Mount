@@ -34,10 +34,12 @@ export default function Navbar() {
                     onClick={() => handleScroll("hero")}
                     className="flex items-center space-x-2"
                 >
-                    <img
+                    <Image
                         src="/images/West-Mount-Logo.png"
                         alt="West Mount Logo"
                         className="h-14 object-contain lg:h-12"
+                        width={130}
+                        height={130}
                     />
                 </button>
 
@@ -47,8 +49,8 @@ export default function Navbar() {
                         <Link
                             key={link.href}
                             href={link.href}
-                            className={`text-gray-700 hover:text-gray-900 focus:text-blue-600 ${
-                                pathname === link.href ? "text-blue-600" : ""
+                            className={`text-gray-700 hover:text-gray-900 focus:text-[#005B5B] ${
+                                pathname === link.href ? "text-[#006969]" : ""
                             }`}
                         >
                             {link.name}

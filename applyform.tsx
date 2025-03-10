@@ -363,7 +363,8 @@ export function ApplyForm() {
 
                     <Button
                         type="submit"
-                        className="w-full rounded-lg py-5 bg-teal-600 hover:bg-teal-700 text-white"
+                        variant="default"
+                        className="w-full rounded-lg py-5"
                         disabled={isSubmitting}
                     >
                         {isSubmitting ? "Submitting..." : "Submit"}

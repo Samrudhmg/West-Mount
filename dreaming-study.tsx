@@ -1,6 +1,7 @@
 // import { ApplyDialogForm } from "@/components/main/apply-dialog-form";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { ApplyDialogForm } from "./apply-dialog-form";
 
 export default function StudyAbroadPage() {
     return (
@@ -41,19 +42,21 @@ export default function StudyAbroadPage() {
             </div>
 
             <div className="flex justify-center">
-                {/* <ApplyDialogForm>  */}
-                <Button
-                    className="flex bg-teal-700 h-12 items-center"
-                    variant="nothing"
-                >
-                    Get Started
-                    <img
-                        src="/icons/plane-white.svg"
-                        alt=""
-                        className=" size-5"
-                    />
-                </Button>
-                {/* </ApplyDialogForm> */}
+                <ApplyDialogForm>
+                    <Button
+                        className="flex  h-12 items-center"
+                        variant="default"
+                    >
+                        Get Started
+                        <Image
+                            src="/icons/white-plane.svg"
+                            alt="plane"
+                            className=" size-5"
+                            width={10}
+                            height={10}
+                        />
+                    </Button>
+                </ApplyDialogForm>
             </div>
         </div>
     );
