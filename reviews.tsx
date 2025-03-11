@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { ReviewCard } from "./review-card";
+import { Button } from "../ui/button";
+import { ApplyDialogForm } from "./apply-dialog-form";
 
 const reviews = [
     {
@@ -70,9 +72,11 @@ export default function TestimonialsReview() {
                             </div>
                         </div>
                     </div>
-                    <button className="px-6 py-2 bg-teal-600 text-white font-medium rounded flex items-center gap-2 hover:bg-teal-700 transition-colors">
-                        Start Your Journey Today
-                    </button>
+                    <ApplyDialogForm>
+                        <Button className="px-6 py-2 bg-teal-600 text-white font-medium rounded flex items-center gap-2 hover:bg-teal-700 transition-colors">
+                            Start Your Journey Today
+                        </Button>
+                    </ApplyDialogForm>
                 </div>
             </div>
         </div>

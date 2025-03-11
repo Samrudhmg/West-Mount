@@ -56,23 +56,23 @@ export default function DestinationSelector() {
             {
                 id: 4,
                 name: "Germany",
-                flag: "/icons/germany-flag.svg",
-                image: "/images/austria-desti.jpg",
+                flag: "/icons/germany.svg",
+                image: "/images/ireland-desti.jpg",
                 description:
                     "Germany offers tuition-free education at many public universities and is known for its excellence in engineering, science, and research opportunities.",
             },
             {
                 id: 5,
                 name: "France",
-                flag: "/france-flag.svg",
-                image: "/images/austria-desti.jpg",
+                flag: "/icons/france.svg",
+                image: "/images/united-kingdom-desti.jpg",
                 description:
                     "France combines rich cultural heritage with prestigious educational institutions, offering diverse programs in arts, sciences, and business.",
             },
             {
                 id: 6,
                 name: "Spain",
-                flag: "/spain-flag.svg",
+                flag: "/icons/spain.svg",
                 image: "/images/austria-desti.jpg",
                 description:
                     "Spain provides a vibrant educational experience with historic universities, affordable tuition, and a welcoming atmosphere for international students.",

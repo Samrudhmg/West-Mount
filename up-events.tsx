@@ -81,7 +81,7 @@ export default function UpCommingEvents() {
                     {/* Modal content */}
                     <div
                         ref={modalRef}
-                        className="relative w-[90%] md:w-[60%] h-[45%] md:h-[80%] lg:h-[70%] bg-white rounded-3xl shadow-xl overflow-hidden"
+                        className="relative w-[90%] md:w-[60%] h-[45%] md:h-[80%] lg:h-[75%] bg-white rounded-3xl shadow-xl overflow-hidden"
                     >
                         {/* Header */}
                         <div className="flex justify-between items-center w-full px-4 py-2 md:px-6 md:py-5 ">

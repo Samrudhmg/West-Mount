@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import { ApplyDialogForm } from "./apply-dialog-form";
 
 const navLinks = [
     { name: "Home", href: "/" },
@@ -60,9 +61,11 @@ export default function Navbar() {
 
                 {/* Get Started Button (Desktop) */}
                 <div className="hidden md:block">
-                    <Button variant="default" className="rounded-md py-5">
-                        Get Started
-                    </Button>
+                    <ApplyDialogForm>
+                        <Button variant="default" className="rounded-md py-5">
+                            Get Started
+                        </Button>
+                    </ApplyDialogForm>
                 </div>
 
                 {/* Mobile Menu Button */}
