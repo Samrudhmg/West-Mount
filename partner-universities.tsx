@@ -196,7 +196,7 @@ export default function PartnerUniversities() {
     const [selectedCountry, setSelectedCountry] = useState("uk");
 
     return (
-        <div className="container max-w-7xl mx-auto py-12 px-4 text-black">
+        <div className="container max-w-7xl mx-auto py-14 px-4 text-black">
             <div className="text-left mb-8">
                 <h2 className="text-4xl font-bold mb-2">
                     Our Top{" "}
@@ -278,7 +278,7 @@ export default function PartnerUniversities() {
 
             <div className="mt-10 ">
                 <Button
-                    variant="nothing"
+                    variant="default"
                     className="bg-teal-700 hover:bg-teal-800 text-white px-6 py-6 rounded-md"
                 >
                     View All Universities

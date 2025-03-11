@@ -24,12 +24,6 @@ const socialLinks = [
         src: "/icons/youtube.svg",
         alt: "LinkedIn",
     },
-    {
-        id: 4,
-        href: "https://twitter.com/your_twitter_username",
-        src: "/icons/twitter.svg",
-        alt: "Twitter",
-    },
 ];
 
 export default function StayConnected() {

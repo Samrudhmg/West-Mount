@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function StudyAbroadLanding() {
     return (
-        <div className="max-w-7xl mx-auto px-4 py-12 space-y-16 md:space-y-24">
+        <div className="max-w-7xl mx-auto px-4 py-10 space-y-16 md:space-y-24">
             {/* First section - reverse order on desktop */}
             {/* Text content */}
             <div className="flex flex-col md:flex-row-reverse items-center gap-10  md:gap-28">

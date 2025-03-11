@@ -21,7 +21,7 @@ export default function Layout() {
     return (
         <div
             className="bg-gradient-to-b from-[#F8FCFF] to-[#F8FFFF]
-         space-y-10"
+         "
         >
             <Hero />
             <Counter stats={stats} />

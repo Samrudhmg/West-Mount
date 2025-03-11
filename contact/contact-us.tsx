@@ -6,8 +6,7 @@ export default function LocateUs() {
         {
             id: 1,
             name: "Ettumanoor",
-            address:
-                "Pantharam Tower, about, Ettumanoor, Kerala, 686631, Above Stoda",
+            address: "Pattithanam, Round-about, Ettumanoor, Kerala, 686631",
         },
         {
             id: 2,

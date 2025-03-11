@@ -5,7 +5,7 @@ import { ApplyDialogForm } from "./apply-dialog-form";
 
 export default function StudyAbroadPage() {
     return (
-        <div className="mx-auto max-w-7xl px-4  text-left  md:text-center">
+        <div className="mx-auto max-w-7xl px-4 py-10 text-left  md:text-center">
             <div className="mb-8 md:hidden">
                 <h1 className="mb-4 text-3xl font-semibold md:text-4xl">
                     Dreaming of studying{" "}

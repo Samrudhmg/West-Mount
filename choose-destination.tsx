@@ -93,7 +93,7 @@ export default function DestinationSelector() {
     };
 
     return (
-        <div className="max-w-7xl mx-auto px-4 py-12">
+        <div className="max-w-7xl mx-auto px-4 py-16">
             <div className="md:text-center mb-10">
                 <h1 className="text-4xl font-bold mb-1 text-black">
                     Choose your Favourite{" "}
@@ -139,14 +139,31 @@ export default function DestinationSelector() {
                             <p className="text-gray-600 text-[13px] text-center">
                                 {country.description}
                             </p>
-                            <ApplyDialogForm>
-                                <Button
-                                    variant="default"
-                                    className=" text-white px-4 py-3 rounded-md text-xs hover:bg-teal-700 transition-colors"
-                                >
-                                    Learn more
-                                </Button>
-                            </ApplyDialogForm>
+                            <div className="flex items-center justify-center gap-3">
+                                <ApplyDialogForm>
+                                    <Button
+                                        variant="default"
+                                        className=" text-white px-4 py-3 rounded-lg text-xs hover:bg-teal-700 transition-colors"
+                                    >
+                                        Learn more
+                                    </Button>
+                                </ApplyDialogForm>
+                                <a href="tel:+919072123477">
+                                    <Button
+                                        variant="default"
+                                        className=" text-white py-3 flex rounded-lg items-center gap-2"
+                                    >
+                                        Call Us
+                                        <Image
+                                            src="/icons/call-fill.svg"
+                                            alt="Call"
+                                            className="size-4"
+                                            width={100}
+                                            height={100}
+                                        />
+                                    </Button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 ))}
