@@ -6,19 +6,20 @@ export default function LocateUs() {
         {
             id: 1,
             name: "Ettumanoor",
-            address: "Pattithanam, Round-about, Ettumanoor, Kerala, 686631",
+            address:
+                "Pattithanam, Round-about, Ettumanoor, Kottayam, Kerala, 686631, Above Skoda Showroom",
         },
         {
             id: 2,
             name: "Kochi",
             address:
-                "Anachivilayi, Palayattom, Kochi, Ernakulam, Kerala, 682028",
+                "Alinchuvadu, Palarivattom, Kochi, Ernakulam,Kerala, 682028",
         },
         {
             id: 3,
             name: "Kozhikode",
             address:
-                "Delta Arcade, Medical College Rd, Chevayoor, Kozhikode, Kerala, 673017",
+                "Delta Arcade, Medical College Rd, Chevayoor,Kozhikode, Kerala, 673017",
         },
     ];
 
@@ -36,7 +37,7 @@ export default function LocateUs() {
                 {/* Map with placeholder */}
                 <div className="relative w-full h-[75vh] mb-10 mt-12">
                     <Image
-                        src="/images/locate-us.png"
+                        src="/images/location-image.png"
                         alt="Kerala Map with Locations"
                         height={400}
                         width={400}
