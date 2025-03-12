@@ -10,6 +10,7 @@ import StudyAbroadLanding from "@/components/main/info-visa";
 import PartnerUniversities from "@/components/main/partner-universities";
 import { SuccessStories } from "@/components/main/success-stories";
 import ContactForm from "../contact-us";
+import { StickyFooter } from "../sticky-footer";
 
 const stats = [
     { count: 32, label: "Countries" },
@@ -33,6 +34,7 @@ export default function Layout() {
             <ServicesSection />
             <ContactForm />
             <StudyAbroadPage />
+            <StickyFooter />
             <Questions />
             <Footer />
         </div>
