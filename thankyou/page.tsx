@@ -1,26 +1,28 @@
 "use client";
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation"; // Updated import
 import { useEffect, useState } from "react";
 
-const socialIcons = [
+const socialLinks = [
     {
-        name: "instagram",
-        path: "/icons/instagram.png",
-        url: "https://www.instagram.com/west_mount_studyabroad",
-        title: "West Mount Instagram",
+        id: 1,
+        href: "https://www.instagram.com/west_mount_studyabroad",
+        src: "/icons/instagram.svg",
+        alt: "Instagram",
     },
     {
-        name: "facebook",
-        path: "/icons/facebook.png",
-        url: "https://www.facebook.com/Westmount.Studyabroad/",
-        title: "West-Mount Facebook",
+        id: 2,
+        href: "https://www.facebook.com/Westmount.Studyabroad/",
+        src: "/icons/facebook.svg",
+        alt: "Facebook",
     },
     {
-        name: "youtube",
-        path: "/icons/youtube.png",
-        url: "https://www.youtube.com/@westmountstudyabroad",
-        title: "West-Mount Youtube",
+        id: 3,
+        href: "https://www.youtube.com/@westmountstudyabroad",
+        src: "/icons/youtube.svg",
+        alt: "LinkedIn",
     },
 ];
 
@@ -45,9 +47,9 @@ export default function ThankYouPage() {
     };
 
     return (
-        <div className="bg-white">
+        <div className="bg-white w-full h-[90vh] ">
             <div className="container mx-auto">
-                <div className="flex min-h-[70vh] items-center justify-center">
+                <div className="flex  items-center justify-center">
                     <div className="w-full py-5 text-center md:w-1/2">
                         <div className="mb-4 inline-flex size-32 items-center justify-center rounded-full bg-teal-700">
                             <Image
@@ -61,21 +63,22 @@ export default function ThankYouPage() {
                             />
                         </div>
 
-                        <h1 className="mb-3 text-2xl font-bold">
-                            <span className="text-teal-500">Thank you,</span>{" "}
+                        <h1 className="mb-3 text-2xl lg:text-4xl font-bold">
+                            <span className="text-[#006969]">Thank you,</span>{" "}
                             for submitting!
                         </h1>
-                        <p className="mb-4 text-gray-600">
+                        <p className="mb-4 text-gray-600 lg:text-xl">
                             Our team will connect with you soon!
                         </p>
 
-                        <button
+                        <Button
                             onClick={handleGoBack}
-                            className="my-2 min-w-36 rounded-md bg-teal-700 p-3 text-sm font-medium text-white transition-colors hover:bg-teal-900 focus:outline-none focus:ring-2 focus:ring-West-accent focus:ring-offset-2"
+                            className="my-2 min-w-36 rounded-md  py-6 text-sm font-medium  transition-colors focus:outline-none focus:ring-2 focus:ring-West-accent focus:ring-offset-2"
                             type="submit"
+                            variant="default"
                         >
                             Back to home
-                        </button>
+                        </Button>
 
                         <p className="mb-4 text-gray-500">
                             STAY CONNECTED WITH US
@@ -91,25 +94,23 @@ export default function ThankYouPage() {
                                 />
                             </div>
 
-                            <div>
-                                {socialIcons.map((icon) => (
-                                    <a
-                                        key={icon.name}
-                                        href={icon.url}
+                            <div className="flex items-center justify-center gap-4">
+                                {socialLinks.map((link) => (
+                                    <Link
+                                        key={link.id}
+                                        href={link.href}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="inline-block rounded-full p-2"
+                                        className="hover:opacity-80 transition-opacity"
                                     >
                                         <Image
-                                            src={
-                                                icon.path || "/placeholder.svg"
-                                            }
-                                            alt={icon.name}
-                                            width={40}
-                                            height={40}
-                                            title={icon.title}
+                                            src={link.src}
+                                            alt={link.alt}
+                                            width={24}
+                                            height={24}
+                                            className="w-14 h-14"
                                         />
-                                    </a>
+                                    </Link>
                                 ))}
                             </div>
                         </div>
