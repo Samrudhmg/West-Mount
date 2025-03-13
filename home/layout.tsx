@@ -34,7 +34,7 @@ export default function Layout() {
             <ServicesSection />
             <ContactForm />
             <StudyAbroadPage />
-            <StickyFooter />
+            {/* <StickyFooter /> */}
             <Questions />
             <Footer />
         </div>

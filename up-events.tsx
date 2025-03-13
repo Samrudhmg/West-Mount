@@ -59,7 +59,7 @@ export default function UpCommingEvents() {
         <>
             {/* Trigger button - only show when modal is closed */}
             {!isOpen && (
-                <div className="absolute cursor-pointer right-0 bottom-14 bg-[#006969] text-white text-xs sm:text-sm w-[120px] sm:w-[150px] h-[80px] sm:h-[100px] rounded-tl-xl rounded-bl-xl shadow-lg hover:bg-opacity-90 transition-colors z-10 p-2 text-center flex items-center justify-center">
+                <div className="absolute hidden  cursor-pointer -bottom-34 right-0 2xl:bottom-54  xl:bottom-14 bg-[#006969] text-white text-xs sm:text-sm w-[120px] sm:w-[150px] h-[80px] sm:h-[100px] rounded-tl-xl rounded-bl-xl shadow-lg hover:bg-opacity-90 transition-colors z-10 p-2 text-center  md:flex items-center justify-center">
                     <button
                         onClick={openModal}
                         className="flex flex-col items-center justify-center gap-2 cursor-pointer"

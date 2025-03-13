@@ -28,7 +28,7 @@ export default function Footer() {
     const branches = [
         { name: "Kochi", url: "/" },
         {
-            name: "Trivandrum",
+            name: "Kottayam",
             url: "/",
         },
         { name: "Calicut", url: "/" },
@@ -37,21 +37,21 @@ export default function Footer() {
     const socialLinks = [
         {
             name: "@west_mount_studyabroad",
-            followers: "220K followers",
+            // followers: "220K followers",
             url: "https://www.instagram.com/west_mount_studyabroad",
             icon: "/icons/social1.svg",
             title: "Instagram",
         },
         {
             name: "West Mount Study Abroad",
-            followers: "22.5K followers",
+            // followers: "22.5K followers",
             url: "https://www.youtube.com/@westmountstudyabroad",
             icon: "/icons/social2.svg",
             title: "YouTube",
         },
         {
             name: "@Westmount.Studyabroad",
-            followers: "5.6K followers",
+            // followers: "5.6K followers",
             url: "https://www.facebook.com/Westmount.Studyabroad/",
             icon: "/icons/social3.svg",
             title: "Facebook",
@@ -158,7 +158,7 @@ export default function Footer() {
                     <section>
                         <h3 className="text-md mb-4 font-medium">Follow us</h3>
                         <nav aria-label="Social media links">
-                            <div className="space-y-4">
+                            <div className="space-y-6">
                                 {socialLinks.map((social) => (
                                     <Link
                                         key={social.icon}
@@ -171,15 +171,15 @@ export default function Footer() {
                                                 "/placeholder.svg"
                                             }
                                             alt={social.title}
-                                            className="mr-2 size-5"
+                                            className="mr-2 size-6"
                                         />
                                         <div>
                                             <div className="flex items-center gap-3">
                                                 {social.name}
                                             </div>
-                                            <div className="text-sm text-gray-400">
+                                            {/* <div className="text-sm text-gray-400">
                                                 {social.followers}
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </Link>
                                 ))}

@@ -5,7 +5,7 @@ export default function StudyAbroadLanding() {
         <div className="max-w-7xl mx-auto px-4 py-10 space-y-16 md:space-y-24">
             {/* First section - reverse order on desktop */}
             {/* Text content */}
-            <div className="flex flex-col md:flex-row-reverse items-center gap-10  md:gap-28">
+            <div className="flex flex-col md:flex-row-reverse items-center gap-10  lg:gap-28">
                 {/* Image container - appears first on mobile */}
                 <div className="w-full md:w-1/2 flex justify-start">
                     <div className="max-w-lg relative">
@@ -20,16 +20,13 @@ export default function StudyAbroadLanding() {
                 </div>
 
                 {/* Text content - Starts from left, but is aligned to the right side of the container */}
-                <div className="w-full md:w-1/2 space-y-4 flex flex-col justify-center items-start text-start md:ml-18">
+                <div className="w-full md:w-1/2 space-y-4 flex flex-col justify-center items-start text-start lg:ml-18">
                     <h2 className="text-3xl md:text-4xl font-bold">
                         Join the{" "}
                         <span className="text-[#006969]">
-                            Westmount Study
-                            <br />
-                            Abroad
+                            Westmount Study Abroad
                         </span>{" "}
-                        program with a 99% <br />
-                        visa success rate!
+                        program with a 99% visa success rate!
                     </h2>
                     <p className="text-gray-600">
                         Secure your dream course with confidence and clarity.
@@ -38,7 +35,7 @@ export default function StudyAbroadLanding() {
             </div>
 
             {/* Second section - normal order */}
-            <div className="flex flex-col md:flex-row items-center gap-10  md:gap-28">
+            <div className="flex flex-col md:flex-row items-center gap-10  lg:gap-28">
                 {/* Image container - appears first on mobile */}
                 <div className="w-full md:w-1/2 flex justify-end">
                     <div className="max-w-lg">
@@ -57,13 +54,11 @@ export default function StudyAbroadLanding() {
                 {/* Text content */}
                 <div className="w-full md:w-1/2 space-y-4 flex flex-col justify-center items-start">
                     <h2 className="text-3xl md:text-4xl  font-bold ">
-                        Expand your horizons with
-                        <br />{" "}
+                        Expand your horizons with{" "}
                         <span className="text-[#006969]">
                             Westmount Study Abroad
                         </span>
-                        ,<br /> unlocking new global
-                        <br /> opportunities.
+                        , unlocking new global opportunities.
                     </h2>
                     <p className="text-gray-600">
                         Make your international aspirations a reality.
