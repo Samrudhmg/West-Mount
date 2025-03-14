@@ -55,10 +55,12 @@ export default function TestimonialsReview() {
                             alt="Google"
                             width={40}
                             height={40}
-                            className="w-14 h-14"
+                            className="w-12 h-12 md:w-14 md:h-14"
                         />
                         <div>
-                            <p className="font-medium text-lg">Google Rating</p>
+                            <p className="font-medium  md:text-lg">
+                                Google Rating
+                            </p>
                             <div className="flex items-center gap-2">
                                 <span className="text-xl font-bold">5.0</span>
                                 <div className="flex">
@@ -67,16 +69,18 @@ export default function TestimonialsReview() {
                                         alt="stars"
                                         width={100}
                                         height={100}
+                                        className=" w-24 h-5 md:h-full md:w-full"
                                     />
                                 </div>
                             </div>
                         </div>
                     </div>
                     <ApplyDialogForm>
-                        <Button className="px-6 py-2 bg-teal-600 text-white font-medium rounded flex items-center gap-2 hover:bg-teal-700 transition-colors">
+                        <Button className="px-6 py-2 bg-[#005B5B] text-white font-medium rounded flex items-center gap-2 hover:bg-teal-700 transition-colors">
                             Start Your Journey Today
                         </Button>
                     </ApplyDialogForm>
+                    s
                 </div>
             </div>
         </div>

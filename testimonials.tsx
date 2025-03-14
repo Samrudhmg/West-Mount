@@ -20,13 +20,13 @@ export default function SuccessStoriesSection() {
                             />
 
                             {/* Google Rating Badge - Centered */}
-                            <div className="absolute bottom-3 md:bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 flex justify-center w-full">
+                            <div className="absolute bottom-3 md:bottom-4 left-1/2 transform -translate-x-1/2 translate-y-1/2 flex justify-center w-full">
                                 <Image
                                     src="/images/success-rate.svg"
-                                    width={240} // Slightly reduced width
-                                    height={240} // Slightly reduced height
+                                    width={300} // Slightly reduced width
+                                    height={300} // Slightly reduced height
                                     alt="Google Ratings"
-                                    className="mx-auto" // Added mx-auto to center the image
+                                    className="mx-auto w-60 h-60  md:h-full md:w-full" // Added mx-auto to center the image
                                 />
                             </div>
                         </div>

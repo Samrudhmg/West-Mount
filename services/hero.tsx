@@ -6,7 +6,7 @@ import { ApplyDialogForm } from "../apply-dialog-form";
 export default function ServiceHero() {
     return (
         <div className="max-w-7xl mx-auto py-16 md:py-12 lg:py-16">
-            <div className="relative w-full h-96 md:h-[50vh] lg:h-[70vh] rounded-xl overflow-hidden px-2">
+            <div className="relative w-full h-96 md:h-[50vh] lg:h-[70vh] xl:h-[60vh] rounded-xl overflow-hidden px-2">
                 <Image
                     src="/images/service-hero-img.jpg"
                     alt="Airplane silhouette against a sunset sky"

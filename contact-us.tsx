@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function ContactForm() {
     return (
-        <div className="container max-w-7xl mx-auto flex flex-col  md:flex md:flex-row items-center justify-center gap-10 px-4 py-12 md:px-8 lg:px-12 md:py-14">
+        <div className="container max-w-7xl mx-auto flex flex-col  md:flex md:flex-row-reverse items-center justify-center gap-10 px-4 py-12 md:px-8 lg:px-12 md:py-14">
             {/* Left Column - 40% width */}
             <div
                 className="relative w-full  md:w-[30%] py-14 max-w-sm rounded-lg overflow-hidden bg-[#032022]

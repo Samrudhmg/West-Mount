@@ -35,7 +35,7 @@ export function ApplyDialogForm({ children }: Readonly<ApplyDialogFormProps>) {
             <Suspense fallback={<p>Loading form...</p>}>
                 <Dialog open={isOpen} onOpenChange={setIsOpen}>
                     <DialogTrigger asChild>{children}</DialogTrigger>
-                    <DialogContent className="py-0 sm:max-w-[500px]">
+                    <DialogContent className="py-0 max-w-[700px]">
                         <DialogHeader>
                             <DialogTitle className="sr-only">Apply</DialogTitle>
                         </DialogHeader>
@@ -55,7 +55,9 @@ export function ApplyDialogForm({ children }: Readonly<ApplyDialogFormProps>) {
                         <DrawerTitle></DrawerTitle>
                         <DrawerDescription>title</DrawerDescription>
                     </DrawerHeader>
-                    <ApplyForm />
+                    <div className="max-h-[70vh] overflow-y-auto ">
+                        <ApplyForm />
+                    </div>
                 </DrawerContent>
             </Drawer>
         </Suspense>

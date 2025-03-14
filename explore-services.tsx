@@ -73,7 +73,7 @@ export default function ServicesSection() {
                 </div>
                 <Button
                     variant="default"
-                    className="  px-6 py-6 text-lg rounded-md font-medium flex items-center gap-2"
+                    className="  px-6 py-6 mt-3 md:mt-0 text-lg rounded-md font-medium flex items-center gap-2"
                 >
                     Get Started
                 </Button>

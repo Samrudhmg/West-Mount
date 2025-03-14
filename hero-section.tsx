@@ -5,30 +5,28 @@ import { Button } from "@/components/ui/button";
 import StudentAvatars from "./students-community";
 import { ApplyDialogForm } from "./apply-dialog-form";
 import UpCommingEvents from "./up-events";
+import { useRouter } from "next/navigation";
 
 export default function Hero() {
+    const router = useRouter();
     return (
         <div className="max-w-[1200px] mx-auto px-4 py-8 md:py-12 lg:py-16 ">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-0 items-center">
                 {/* Text Section - Made Wider */}
                 <div className="space-y-4 md:space-y-5 lg:space-y-6 order-2 lg:order-1 lg:col-span-6">
                     <div className="space-y-2">
-                        <h1 className="text-2xl text-black sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold tracking-tight">
-                            <span className="whitespace-nowrap">
-                                Your passport to success -
+                        <h1 className="text-2xl text-black sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl font-bold tracking-tight">
+                            <span className="text-[#006969]">
+                                Best study abroad consultancy in Kerala-
                             </span>{" "}
-                            <span className="text-teal-600 text-3xl sm:text-4xl md:text-4xl xl:text-5xl leading-tight">
-                                <br />
-                                Study Abroad Starts
-                                <br /> Here!
-                            </span>
+                            quality education, affordable fees, top
+                            universities, 32+ countries.
                         </h1>
-                        <p className="text-sm sm:text-base md:text-xl text-gray-600 mt-3 md:mt-4">
-                            At West Mount Study Abroad, we turn your dream of
-                            <br />
-                            studying abroad into a seamless, successful reality
-                            <br />
-                            changing journey.
+                        <p className="text-sm sm:text-base md:text-lg text-gray-600 mt-3 md:mt-4">
+                            Dreaming of studying abroad? With hundreds of
+                            different courses from 15,000+ colleges to choose
+                            from, study at the best university at the lowest
+                            possible fees.
                         </p>
                     </div>
 
@@ -41,6 +39,7 @@ export default function Hero() {
                         <Button
                             variant="outline"
                             className="rounded-md py-5 text-[#006969]"
+                            onClick={() => router.push("/contact")} // Navigates to contact page
                         >
                             Learn more
                         </Button>

@@ -218,13 +218,13 @@ export function ApplyForm() {
         }
     };
     return (
-        <div className="w-full bg-white rounded-lg lg:p-2 shadow-[0px_1px_7px_1px_#00000017]">
-            <div className="block px-5 py-4 md:px-2">
+        <div className="w-full   bg-white rounded-lg lg:p-2 shadow-[0px_1px_7px_1px_#00000017] ">
+            <div className="block px-5 py-4 md:px-2 ">
                 <h3 className="mb-6 text-black text-center text-2xl font-semibold">
                     Get in touch
                 </h3>
                 <form onSubmit={handleSubmit} className="mb-5 space-y-4">
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid  md:grid-cols-2 gap-4">
                         <div className="space-y-2">
                             <label
                                 htmlFor="name"
@@ -264,7 +264,7 @@ export function ApplyForm() {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-2">
+                    <div className="grid  md:grid-cols-2 gap-2">
                         <div className="space-y-2">
                             <label
                                 htmlFor="name"
@@ -320,7 +320,7 @@ export function ApplyForm() {
                                                     }
                                                     width={20}
                                                     height={15}
-                                                    className="size-6 rounded-full object-cover"
+                                                    className="size-5  md:size-6 rounded-full object-cover"
                                                 />
                                                 <span className="font-medium text-gray-700">
                                                     {selectedDialCode}
@@ -373,7 +373,7 @@ export function ApplyForm() {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-2">
+                    <div className="grid  md:grid-cols-2 gap-2">
                         <div className="space-y-2">
                             <label
                                 htmlFor="courses"
@@ -383,7 +383,7 @@ export function ApplyForm() {
                             </label>
                             <Select name="destination" required>
                                 <SelectTrigger className="h-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500">
-                                    <SelectValue placeholder="Select your preferred course" />
+                                    <SelectValue placeholder="Select your Destination" />
                                 </SelectTrigger>
                                 <SelectContent className="bg-white text-black border border-gray-300 shadow-md">
                                     {COUNTRY_OPTIONS.map((country) => (
@@ -426,7 +426,7 @@ export function ApplyForm() {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-2">
+                    <div className="grid  md:grid-cols-2 gap-2">
                         <div className="space-y-2">
                             <label
                                 htmlFor="qualification"
@@ -461,7 +461,7 @@ export function ApplyForm() {
                                 htmlFor="callOn"
                                 className="text-sm font-medium text-gray-700"
                             >
-                                When should we call you? (optional)
+                                When should we call you?
                             </label>
                             <DatePicker
                                 onChange={(date) =>

@@ -123,7 +123,7 @@ function ServiceCardRight({ icon, title, description }: ServiceCardProps) {
             </div>
             <div className=" bg-teal-900 rounded-2xl flex-shrink-0">
                 <Image
-                    src={icon}
+                    src={icon || "/default-image.png"}
                     height={500}
                     width={500}
                     alt="Custom Icon"
