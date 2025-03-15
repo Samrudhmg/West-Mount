@@ -18,7 +18,7 @@ export default function WestmountAbout() {
                     </h1>
 
                     <p className="text-gray-600 text-lg">
-                        The journey of Westmount&apos;s study abroad
+                        The Success Story of WestMount&apos;s study abroad
                     </p>
 
                     <StudentAvatars />

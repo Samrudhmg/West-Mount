@@ -22,18 +22,17 @@ export default function OurStorySection() {
                         <span className="text-teal-500 font-bold">
                             West Mount Study Abroad
                         </span>{" "}
-                        began with a mission to bridge the gap between aspiring
-                        students and the opportunities available abroad. Our
-                        focus has always been on understanding students' unique
-                        aspirations and guiding them toward universities that
-                        align with their goals and needs.
+                        was founded with a clear mission — to connect ambitious
+                        students with life-changing opportunities abroad. From
+                        the start, our passion has been understanding each
+                        student’s unique aspirations and guiding them toward
+                        universities that align with their goals.
                     </p>
                     <p className="text-gray-700 leading-relaxed mt-4">
-                        When we started, Ireland was a largely untapped
-                        destination among study abroad agencies in Kerala.
-                        Recognizing this opportunity, we positioned ourselves as
-                        pioneers in promoting Ireland as a promising option for
-                        higher education.
+                        At the beginning of our journey, Ireland was still a
+                        hidden gem among study-abroad options in Kerala. Seeing
+                        its incredible potential, we proudly took the initiative
+                        to promote Ireland as a top choice for higher education.
                     </p>
                 </div>
             </div>
@@ -43,19 +42,18 @@ export default function OurStorySection() {
                 {/* Text First on Desktop, Image First on Mobile */}
                 <div className="w-full max-w-[90%] md:max-w-[80%] text-justify mx-auto">
                     <p className="text-gray-700 leading-relaxed mt-5 md:mt-0">
-                        Our initial focus was on commerce and related fields,
-                        offering tailored guidance for students aiming to pursue
-                        careers in business, finance, and management.
+                        At first, we focused on commerce and related fields,
+                        helping students pursue careers in business, finance,
+                        and management with personalized guidance.
                     </p>
                     <p className="text-gray-700 leading-relaxed mt-4">
-                        Through our journey, we discovered a significant gap in
-                        Kerala when it came to expert career guidance,
-                        counseling tailored to students' degrees, and
-                        streamlined visa processing. This realization inspired
-                        us to expand our services beyond Ireland, venturing into
-                        other European countries and diverse fields of study,
-                        including Engineering, Medicine, Pharmacy, Computing,
-                        and more.
+                        As we grew, we noticed a major gap in Kerala — students
+                        lacked access to expert career advice, personalized
+                        guidance for their degrees, and smooth visa processing.
+                        This inspired us to expand our services beyond Ireland,
+                        reaching into other European countries and offering a
+                        diverse range of options, including Engineering,
+                        Medicine, Pharmacy, Computing, and more.
                     </p>
                 </div>
                 {/* Image First on Mobile, Right on Desktop */}

@@ -21,29 +21,28 @@ export default function ServiceHero() {
             {/* Content Section */}
             <div className="mt-6 text-left max-w-3xl px-2 md:px-4">
                 <h1 className="text-4xl md:text-5xl font-bold mb-4 md:leading-14">
-                    <span className="text-gray-900">Dreaming of </span>
+                    <span className="text-gray-900">Ready to </span>
                     <span className="text-teal-600">
-                        Studying
+                        Study
                         <span className="hidden md:inline">
                             <br />
                         </span>{" "}
                         Abroad?
                     </span>{" "}
                     <span className="text-gray-900">
-                        Let Us Make It a
+                        Let's
                         <span className="hidden lg:inline">
                             <br />
                         </span>{" "}
-                        Reality!
+                        Turn Your Dream into Reality
                     </span>
                 </h1>
 
                 <p className="text-gray-700 text-lg mb-6">
-                    At West Mount Study Abroad, we turn your dream of <br />{" "}
-                    studying abroad into a seamless and successful journey.
-                    <br /> With expert guidance and personalized support, we're
-                    <br />
-                    your trusted partner every step of the way.
+                    At West Mount Study Abroad, we make your dream of studying
+                    abroad a reality. With expert guidance and personalized
+                    support, we’re with you every step of the way to ensure a
+                    bright and successful journey.
                 </p>
 
                 <div className="flex items-center mb-4">

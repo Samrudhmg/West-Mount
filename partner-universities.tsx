@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { ApplyDialogForm } from "./apply-dialog-form";
 
 // University type definition
 type University = {
@@ -494,12 +495,14 @@ export default function PartnerUniversities() {
         <div className="container max-w-7xl mx-auto py-14 px-4 text-black">
             <div className="text-left mb-8">
                 <h2 className="text-4xl font-bold mb-2">
-                    Our Top{" "}
-                    <span className="text-teal-600">Partner Universities</span>
+                    Our{" "}
+                    <span className="text-teal-600">
+                        Most Valued University Partners
+                    </span>
                 </h2>
                 <p className="text-gray-600 max-w-4xl text-lg mt-4">
-                    We work with some of the best universities in the world to
-                    give you the best education options.
+                    We collaborate with world-class universities to offer you
+                    the best education opportunities.
                 </p>
             </div>
 
@@ -541,40 +544,44 @@ export default function PartnerUniversities() {
                         value={country.code}
                         className="mt-0"
                     >
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            {country.universities
-                                .slice(
-                                    0,
-                                    showAll ? country.universities.length : 3,
-                                )
-                                .map((university, index) => (
-                                    <div
-                                        key={index}
-                                        className="bg-white p-6 rounded-lg border border-gray-200 flex items-center gap-8 hover:shadow-md transition-shadow"
-                                    >
-                                        <div className="flex-shrink-0">
-                                            <Image
-                                                src={
-                                                    university.logoUrl ||
-                                                    "/placeholder.svg"
-                                                }
-                                                alt={`${university.name} logo`}
-                                                width={80}
-                                                height={80}
-                                                className="rounded-md object-contain w-20 h-20"
-                                            />
+                        <ApplyDialogForm>
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                {country.universities
+                                    .slice(
+                                        0,
+                                        showAll
+                                            ? country.universities.length
+                                            : 3,
+                                    )
+                                    .map((university, index) => (
+                                        <div
+                                            key={index}
+                                            className="bg-white p-6 rounded-lg border border-gray-200 flex items-center gap-8 hover:shadow-md transition-shadow"
+                                        >
+                                            <div className="flex-shrink-0">
+                                                <Image
+                                                    src={
+                                                        university.logoUrl ||
+                                                        "/placeholder.svg"
+                                                    }
+                                                    alt={`${university.name} logo`}
+                                                    width={80}
+                                                    height={80}
+                                                    className="rounded-md object-contain w-20 h-20"
+                                                />
+                                            </div>
+                                            <div>
+                                                <h3 className="font-medium text-lg text-teal-700">
+                                                    {university.name}
+                                                </h3>
+                                                <p className="text-gray-500 text-sm">
+                                                    {university.location}
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <h3 className="font-medium text-lg text-teal-700">
-                                                {university.name}
-                                            </h3>
-                                            <p className="text-gray-500 text-sm">
-                                                {university.location}
-                                            </p>
-                                        </div>
-                                    </div>
-                                ))}
-                        </div>
+                                    ))}
+                            </div>
+                        </ApplyDialogForm>
 
                         {country.universities.length > 3 && (
                             <div className="mt-8 flex justify-center">

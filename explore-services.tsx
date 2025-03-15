@@ -1,61 +1,62 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
+import { ApplyDialogForm } from "./apply-dialog-form";
 
 export default function ServicesSection() {
     const services = [
         {
             icon: "/icons/Free-councelling-icon.svg",
-            title: "Free Career Councelling",
+            title: "Free Career Councelling Services",
             description:
-                "We help you figure out which path is best for your future",
+                "We guide you in finding the best path for your future.",
         },
         {
             icon: "/icons/uni-selection.svg",
-            title: "University Selection",
+            title: "Institution Selection",
             description:
-                "Get help choosing the right universities and courses that fit your profile.",
+                "Let us help you find the perfect universities and courses that match your unique profile.",
         },
         {
             icon: "/icons/application-support.svg",
-            title: "Application Support",
+            title: "Course Selection",
             description:
-                "Don't worry about paperwork. We'll guide you step by step through the application process.",
+                "Let us handle the paperwork; we’ll guide you through every step of the application process, making it easy and stress-free.",
         },
         {
             icon: "/icons/scholarship-loan.svg",
-            title: "Scholarship & Loan Assistance",
+            title: "Grant & Financial Aid Support",
             description:
-                "We assist with finding scholarships and help with education loans if needed.",
+                "We’ll help you explore scholarships and guide you through education loans if you need them.",
         },
         {
             icon: "/icons/visa.svg",
-            title: "Visa Application Guidance",
+            title: "Visa Assistance",
             description:
-                "Applying for a visa can be tough, but we'll make it simple and stress-free for you.",
+                "Getting a visa can feel complicated, but we’re here to make the process smooth and stress-free for you.",
         },
         {
             icon: "/icons/travel-service-icon.svg",
-            title: "Accommodation & Travel Assistance",
+            title: "Housing and Transportation Support",
             description:
-                "Find safe housing and manage travel logistics with ease.",
+                "Easily secure safe housing and handle your travel plans — we’re here to help every step of the way.",
         },
         {
             icon: "/icons/post-arrival-icon.svg",
-            title: "Predeparture and post arrival support",
+            title: "Arrival and Departure Guidance",
             description:
-                "We assist with finding scholarships and help with education loans if needed.",
+                "We’re with you every step of the way, from pre-departure to post-arrival, making your study abroad journey smooth and stress-free.",
         },
         {
             icon: "/icons/internship-service-icon.svg",
-            title: "Internship and job support",
+            title: "Work Experience and Career Assistance",
             description:
-                "Explore opportunities for internships and part-time jobs to enhance your global experience.",
+                "Discover exciting internship and part-time job opportunities to enrich your global experience and boost your career journey.",
         },
         {
             icon: "/icons/workshop-icon.svg",
-            title: "Pre departure workshops & Ongoing Support",
+            title: "Orientation Sessions and Continuous Assistance",
             description:
-                "Learn about the culture, customs, and lifestyle of your study destination to feel at home from day one.",
+                "Get familiar with the culture, customs, and lifestyle of your study location so you feel right at home from day one.",
         },
     ];
 
@@ -64,19 +65,21 @@ export default function ServicesSection() {
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
                 <div>
                     <h2 className="text-teal-900 text-3xl md:text-4xl font-bold">
-                        Explore{" "}
-                        <span className="text-teal-600">our services</span>
+                        See How We Can Make Things{" "}
+                        <span className="text-teal-600">Easier for You </span>
                     </h2>
                     <p className="mt-2 text-gray-600">
-                        We stand by your side every step of the way.
+                        We are here to support you every step of the way.
                     </p>
                 </div>
-                <Button
-                    variant="default"
-                    className="  px-6 py-6 mt-3 md:mt-0 text-lg rounded-md font-medium flex items-center gap-2"
-                >
-                    Get Started
-                </Button>
+                <ApplyDialogForm>
+                    <Button
+                        variant="default"
+                        className="  px-6 py-6 mt-3 md:mt-0 text-lg rounded-md font-medium flex items-center gap-2"
+                    >
+                        Get Started
+                    </Button>
+                </ApplyDialogForm>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">

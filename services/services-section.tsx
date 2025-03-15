@@ -8,14 +8,15 @@ export default function ServicesSection() {
                 {" "}
                 {/* Slightly wider width */}
                 <div className="text-center mb-10">
-                    <h2 className="text-2xl font-semibold">
-                        Our services -{" "}
+                    <h2 className="text-2xl lg:text-3xl font-semibold">
+                        Our solutions -{" "}
                         <span className="text-teal-600">
-                            Every Step of the Way
+                            Each step to your success
                         </span>
                     </h2>
                     <p className="text-gray-600 mt-1">
-                        We stand by your side every step of the way.
+                        We’re with you at every step of the journey, supporting
+                        you all the way.
                     </p>
                 </div>
                 {/* Grid with reduced gap and optimized line height */}
@@ -24,38 +25,38 @@ export default function ServicesSection() {
                     <div className="space-y-12 w-full">
                         <ServiceCardRight
                             icon="/icons/free-career.svg"
-                            title="Free Career Counseling"
-                            description="We help you figure out what path is best for your future."
+                            title="Free Career Coaching"
+                            description="We help you discover the right path to build a bright and successful future."
                         />
                         <ServiceCardRight
                             icon="/icons/application-icon.svg"
-                            title="Application Support"
-                            description="Don't worry about paperwork, we'll guide you step by step."
+                            title="Application process"
+                            description="No need to stress about the paperwork — we’ll walk you through every step of the application process, making it smooth and easy."
                         />
                         <ServiceCardRight
                             icon="/icons/visa-icon.svg"
-                            title="Visa Application Guidance"
-                            description="Applying for a visa can be tough, but we make it simple."
+                            title="Immigration assistance"
+                            description="Visa applications can be challenging, but don’t worry — we’ve got your back and will help you every step of the way."
                         />
                         <ServiceCardRight
                             icon="/icons/predeparture.svg"
-                            title="Predeparture and Post Arrival Support"
-                            description="We assist with finding accommodation and help with loans."
+                            title="Pre-travel & Welcome assistance"
+                            description="We help you find scholarships and assist with education loans, making your study journey easier and more affordable."
                         />
                         <ServiceCardRight
                             icon="/icons/internship.svg"
-                            title="Internship and Job Support"
-                            description="Explore internship and part-time job opportunities."
+                            title="Work placement & Career assistance"
+                            description="Boost your global experience by exploring exciting internship and part-time job opportunities along the way."
                         />
                         <ServiceCardRight
                             icon="/icons/forex.svg"
                             title="Forex Support"
-                            description="Help with foreign exchange at competitive rates."
+                            description="Get foreign exchange support, competitive rates, and smart financial tips to manage your money while studying abroad."
                         />
                         <ServiceCardRight
                             icon="/icons/health.svg"
                             title="Health and Travel Insurance Guidance"
-                            description="Support in choosing suitable insurance plans."
+                            description="Get expert help choosing insurance plans to cover medical needs and travel essentials while studying abroad."
                         />
                     </div>
 
@@ -63,23 +64,23 @@ export default function ServicesSection() {
                     <div className="space-y-12 w-full">
                         <ServiceCardLeft
                             icon="/icons/university-selection.svg"
-                            title="University Selection"
-                            description="We help choose the right universities for your profile."
+                            title="Choosing the right university"
+                            description="We’ll help you find the perfect universities and courses that align with your unique profile and goals."
                         />
                         <ServiceCardLeft
                             icon="/icons/scholarship.svg"
-                            title="Scholarship & Loan Assistance"
-                            description="We assist with scholarships and education loans."
+                            title="Fellowship & Loan consultant"
+                            description="We help you find scholarships and education loans, making funding your studies smooth, easy, and worry-free."
                         />
                         <ServiceCardLeft
                             icon="/icons/accommodation.svg"
-                            title="Accommodation & Travel Assistance"
-                            description="Find the best housing and travel options with ease."
+                            title="Housing & Trip Assistance"
+                            description="Find a safe place to live and sort out your travel plans without the stress, we’re here to help every step of the way."
                         />
                         <ServiceCardLeft
                             icon="/icons/ongoing-support.svg"
-                            title="Pre-departure Workshops & Ongoing Support"
-                            description="Learn about your study destination's culture and lifestyle."
+                            title="Pre-travel sessions & Continuous assistance"
+                            description="Familiarize yourself with the culture, customs, and lifestyle in your study destination., so you’ll feel at home from day one."
                         />
                         <ServiceCardLeft
                             icon="/icons/pre-departure-support.svg"
@@ -89,7 +90,7 @@ export default function ServicesSection() {
                         <ServiceCardLeft
                             icon="/icons/pickup-drop.svg"
                             title="Pick-Up and Drop Services"
-                            description="Safe and reliable airport pick-up and drop-off services."
+                            description="Travel stress-free with our reliable airport pick-up and drop-off services, ensuring a smooth start and finish."
                         />
                         <ServiceCardLeft
                             icon="/icons/travel-assistance.svg"
@@ -127,7 +128,7 @@ function ServiceCardRight({ icon, title, description }: ServiceCardProps) {
                     height={500}
                     width={500}
                     alt="Custom Icon"
-                    className="h-24 w-fit "
+                    className="h-26 w-fit "
                 />
                 {/* change the icons to the original icons or bring this icon and replace it with the older icons */}
             </div>
@@ -145,7 +146,7 @@ function ServiceCardLeft({ icon, title, description }: ServiceCardProps) {
                     height={500}
                     width={500}
                     alt="Custom Icon"
-                    className="h-24 w-fit "
+                    className="h-26 w-fit "
                 />
                 {/* change the icons to the original icons or bring this icon and replace it with the older icons */}
             </div>

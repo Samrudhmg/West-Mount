@@ -11,7 +11,7 @@ export default function ContactForm() {
             {/* Left Column - 40% width */}
             <div
                 className="relative w-full  md:w-[30%] py-14 max-w-sm rounded-lg overflow-hidden bg-[#032022]
-                text-white p-8"
+                text-white"
             >
                 <Image
                     src="/images/map-contact.png"
@@ -20,7 +20,7 @@ export default function ContactForm() {
                     height={100}
                     className="w-full h-full object-cover"
                 />
-                <div className="space-y-6">
+                <div className="space-y-6 px-4">
                     <div className="space-y-2">
                         <h2 className="text-2xl font-bold">
                             Your passport to{" "}

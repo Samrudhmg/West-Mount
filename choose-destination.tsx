@@ -43,7 +43,7 @@ export default function DestinationSelector() {
                 flag: "/icons/Ireland-icon.svg",
                 image: "/images/ireland-desti.jpg",
                 description:
-                    "Ireland boasts a vibrant education system, known for its high standards and diverse opportunities, all set against the backdrop of Ireland's stunning landscapes.",
+                    "Ireland features a dynamic education system recognized for its exceptional quality and a wide range of opportunities, all framed by the country's breathtaking scenery.",
             },
             {
                 id: 2,
@@ -51,7 +51,7 @@ export default function DestinationSelector() {
                 flag: "/icons/united-kingdom.svg",
                 image: "/images/united-kingdom-desti.jpg",
                 description:
-                    "Education in the United Kingdom is renowned for its high standards and diverse opportunities, offering a wide range of programs.",
+                    "Education in the United Kingdom is distinguished by its outstanding quality and variety of options, providing an extensive lineup of programs.",
             },
             {
                 id: 3,
@@ -59,55 +59,55 @@ export default function DestinationSelector() {
                 flag: "/icons/austria.svg",
                 image: "/images/austria-desti.jpg",
                 description:
-                    "Austria boasts a robust education system known for its high standards and diverse offerings. The country is home to some of the oldest universities in the world",
+                    "Austria has a strong education system, high standards, and diverse programs. The country hosts some of the oldest universities in the world.",
             },
             {
                 id: 4,
-                name: "Germany",
+                name: "Slovakia",
                 flag: "/icons/germany.svg",
                 image: "/images/ireland-desti.jpg",
                 description:
-                    "Germany offers tuition-free education at many public universities and is known for its excellence in engineering, science, and research opportunities.",
+                    "Slovakia offers vibrant traditions, stunning landscapes, student-friendly education, quality medicine and engineering programs, a welcoming atmosphere, and a central European location.",
             },
             {
                 id: 5,
-                name: "France",
+                name: "Germany",
                 flag: "/icons/france.svg",
                 image: "/images/united-kingdom-desti.jpg",
                 description:
-                    "France combines rich cultural heritage with prestigious educational institutions, offering diverse programs in arts, sciences, and business.",
+                    "Germany offers historic landmarks, innovation, world-class engineering and technology education, affordable tuition, diversity, a strong economy, and excellent career opportunities.",
             },
             {
                 id: 6,
-                name: "Spain",
+                name: "Poland",
                 flag: "/icons/spain.svg",
                 image: "/images/austria-desti.jpg",
                 description:
-                    "Spain provides a vibrant educational experience with historic universities, affordable tuition, and a welcoming atmosphere for international students.",
+                    "Poland offers a rich heritage, flourishing culture, quality education, diverse programs, lively cities, a central location, and a growing job market.",
             },
             {
                 id: 7,
-                name: "Germany",
+                name: "Czech Republic",
                 flag: "/icons/germany.svg",
                 image: "/images/ireland-desti.jpg",
                 description:
-                    "Germany offers tuition-free education at many public universities and is known for its excellence in engineering, science, and research opportunities.",
+                    "The Czech Republic offers a fascinating history, stunning architecture, vibrant culture, budget-friendly education, wide-ranging programs, and a central location for academic and cultural exploration.",
             },
             {
                 id: 8,
-                name: "France",
+                name: "Slovenia",
                 flag: "/icons/france.svg",
                 image: "/images/united-kingdom-desti.jpg",
                 description:
-                    "France combines rich cultural heritage with prestigious educational institutions, offering diverse programs in arts, sciences, and business.",
+                    "Slovenia boasts a vibrant legacy, scenic landscapes, excellent academics, wide-ranging programs, and a central location, offering a perfect mix of learning, adventure, and culture.",
             },
             {
                 id: 9,
-                name: "Spain",
+                name: "Lithuania",
                 flag: "/icons/spain.svg",
                 image: "/images/austria-desti.jpg",
                 description:
-                    "Spain provides a vibrant educational experience with historic universities, affordable tuition, and a welcoming atmosphere for international students.",
+                    "Lithuania offers a dynamic mix of history, culture, and modern life, with accessible learning, varied courses, and great opportunities for travel and growth.",
             },
         ],
         [],
@@ -223,9 +223,9 @@ export default function DestinationSelector() {
                         <br /> Destination
                     </span>
                 </h1>
-                <p className="text-gray-600 max-w-3xl mx-auto mt-2 text-lg">
-                    Select your preferred destination. We have university
-                    partners in more than 32 countries.
+                <p className="text-gray-600 max-w-4xl mx-auto mt-2 text-lg">
+                    You can choose your preferred destination — we have
+                    university partners in over 32+ countries.
                 </p>
             </div>
 
@@ -253,7 +253,7 @@ export default function DestinationSelector() {
                             className="px-3 flex-shrink-0"
                             style={{ width: `${100 / itemsPerPage}%` }}
                         >
-                            <div className="bg-white rounded-lg mb-2 overflow-hidden shadow-[0px_4px_10px_rgba(0,0,0,0.1)] max-w-[350px] mx-auto flex flex-col items-center">
+                            <div className="bg-white rounded-lg mb-2 overflow-hidden shadow-[0px_4px_10px_rgba(0,0,0,0.1)] w-full max-w-[350px] mx-auto flex flex-col items-center">
                                 <div className="relative h-52 w-full">
                                     <Image
                                         src={
@@ -317,7 +317,7 @@ export default function DestinationSelector() {
                 </div>
             </div>
 
-            <div className="flex justify-center  gap-4">
+            <div className="flex justify-center  gap-4 mt-4">
                 <Button
                     onClick={handlePrev}
                     className="w-14 h-14 rounded-full cursor-pointer bg-teal-100 flex items-center justify-center hover:bg-teal-200 transition-colors"

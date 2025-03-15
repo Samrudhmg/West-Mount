@@ -48,11 +48,12 @@ export function SuccessStories() {
                 <div className="container mx-auto px-4 md:px-6">
                     <div className="mb-6 flex flex-col items-start space-y-2 text-left md:items-center lg:mb-10">
                         <h2 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-4xl">
-                            Success Stories
+                            Inspiring Journeys
                         </h2>
                         <p className="max-w-[800px] text-gray-400 md:text-lg">
-                            Hear from students who made their dream of studying
-                            abroad a reality with our help.{" "}
+                            Meet the students who turned their dream of studying
+                            abroad into reality — with a little help from
+                            us.{" "}
                         </p>
                     </div>
 

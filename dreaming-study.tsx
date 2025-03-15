@@ -31,13 +31,13 @@ export default function StudyAbroadPage() {
 
             <div className="hidden md:block">
                 <h1 className="mb-4 text-4xl text-black font-semibold">
-                    Dreaming of studying{" "}
-                    <span className="text-[#006B5E]">abroad</span>?
+                    Thinking About{" "}
+                    <span className="text-[#006B5E]">Studying Abroad?</span>?
                 </h1>
 
                 <p className="mx-auto mb-8 max-w-3xl text-gray-600">
-                    Click below to schedule your free consultation and begin
-                    your journey to studying abroad!
+                    Click below to book your free consultation and start your
+                    journey to studying abroad.
                 </p>
             </div>
 

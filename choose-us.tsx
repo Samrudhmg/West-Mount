@@ -6,32 +6,32 @@ const features = [
     {
         title: "Expert Guidance",
         description:
-            "Not sure which course or university is right for you? Don't worry, we'll guide you based on your interests and goals.",
+            "Are you confused about the right course or university? Don't worry — we will help you find the perfect fit based on your passions and goals.",
     },
     {
         title: "Personalised Support",
         description:
-            "Whether it's preparing your application, securing a visa, or finding accommodation, we take care of everything so you don't have to stress.",
+            "From applications to visas and even finding your home abroad, we handle it all so you can focus on your dreams stress-free.",
     },
     {
         title: "Scholarship Assistance",
         description:
-            "We'll help you find and apply for scholarships to reduce the cost of your education.",
+            "Dream big, pay less! We will help you find and apply for scholarships to make your education more affordable.",
     },
     {
         title: "Cultural Preparation",
         description:
-            "Our team will prepare you to adapt to life in a new country with tips and pre-departure workshops.",
+            "Get ready for your new adventure! Our team will help you adapt with expert tips and pre-departure workshops.",
     },
     {
         title: "Global Network",
         description:
-            "Connect with prestigious universities and innovative programs worldwide.",
+            "Unlock doors to top universities and cutting-edge programs worldwide.",
     },
     {
         title: "Transparent Process",
         description:
-            "We provide clear, honest advice so you can make the best decisions for your future.",
+            "We are here to give you clear, honest advice, helping you make confident choices for a brighter future.",
     },
 ];
 
@@ -41,14 +41,14 @@ export default function WhyChooseUs() {
             <section className="bg-[#0a2a2f] text-white w-full mx-auto py-7 md:py-16 px-4">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-bold md:text-center text-left mb-4">
-                        Why Choose Us?
+                        Why West Mount Study Abroad ?
                     </h2>
 
                     <p className=" md:text-center text-left max-w-4xl mx-auto mb-12 text-sm md:text-base">
-                        At West Mount Study Abroad, we are committed to turning
-                        your dream of studying abroad into a seamless,
-                        successful reality. Here's why students and families
-                        trust us as their partner in this life-changing journey:
+                        At West Mount Study Abroad Consultants, we make your
+                        dream of studying abroad a smooth and successful
+                        reality. That's why students and families trust us on
+                        this life-changing journey.
                     </p>
 
                     {/* Mapping Feature Cards */}

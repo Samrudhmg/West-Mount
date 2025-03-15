@@ -6,12 +6,13 @@ export default function Westmountinfo() {
             <h1 className="max-w-[90%] text-white">
                 At{" "}
                 <span className="text-teal-400"> West Mount Study Abroad</span>,
-                we continue to <span className="text-teal-400">empower</span>
-                <br /> students with the right{" "}
-                <span className="text-teal-400">guidance</span>, making their
-                aspirations of
-                <br /> studying abroad a{" "}
-                <span className="text-teal-400">reality</span>.
+                we’re passionate about helping students turn their{" "}
+                <span className="text-teal-400">
+                    dreams of studying abroad into reality
+                </span>
+                <br /> with the{" "}
+                <span className="text-teal-400">right guidance</span>every step
+                of the way.
             </h1>
         </section>
     );

@@ -15,7 +15,7 @@ export default function Hero() {
                 {/* Text Section - Made Wider */}
                 <div className="space-y-4 md:space-y-5 lg:space-y-6 order-2 lg:order-1 lg:col-span-6">
                     <div className="space-y-2">
-                        <h1 className="text-2xl text-black sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl font-bold tracking-tight">
+                        <h1 className="text-2xl text-black md:text-4xl lg:text-5xl xl:text-4xl font-bold tracking-tight">
                             <span className="text-[#006969]">
                                 Best study abroad consultancy in Kerala-
                             </span>{" "}

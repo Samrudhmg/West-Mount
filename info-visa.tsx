@@ -21,15 +21,16 @@ export default function StudyAbroadLanding() {
 
                 {/* Text content - Starts from left, but is aligned to the right side of the container */}
                 <div className="w-full md:w-1/2 space-y-4 flex flex-col justify-center items-start text-start lg:ml-18">
-                    <h2 className="text-3xl md:text-4xl font-bold">
-                        Join the{" "}
+                    <h2 className="text-2xl md:text-4xl font-bold">
+                        Join West Mount Study Abroad,{" "}
                         <span className="text-[#006969]">
-                            Westmount Study Abroad
+                            One of the Best Study Abroad consultants in Kerala
                         </span>{" "}
-                        program with a 99% visa success rate!
+                        and enjoy a 99% visa success rate. Your future starts
+                        here.
                     </h2>
                     <p className="text-gray-600">
-                        Secure your dream course with confidence and clarity.
+                        Step into Your Dream Course with Confidence and Clarity.
                     </p>
                 </div>
             </div>
@@ -54,14 +55,14 @@ export default function StudyAbroadLanding() {
                 {/* Text content */}
                 <div className="w-full md:w-1/2 space-y-4 flex flex-col justify-center items-start">
                     <h2 className="text-3xl md:text-4xl  font-bold ">
-                        Expand your horizons with{" "}
                         <span className="text-[#006969]">
-                            Westmount Study Abroad
+                            West Mount Study{" "}
                         </span>
-                        , unlocking new global opportunities.
+                        Abroad helps you unlock global opportunities,So why
+                        wait? Join now.
                     </h2>
                     <p className="text-gray-600">
-                        Make your international aspirations a reality.
+                        Bring Your Global Dreams to Reality.
                     </p>
                 </div>
             </div>

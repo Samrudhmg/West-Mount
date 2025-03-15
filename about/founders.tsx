@@ -20,8 +20,8 @@ export default function FoundersSection() {
         <div className="max-w-6xl mx-auto px-4 py-12">
             <h2 className="text-2xl font-bold mb-2">Founders</h2>
             <p className="text-gray-600 mb-10">
-                We work with some of the best universities in the world to give
-                you the best education options.
+                We collaborate with leading universities worldwide to bring you
+                the best education opportunities.
             </p>
 
             {/* Founders Grid */}
